@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="福岡の人気餃子が一堂に集結！ご当地餃子や創作餃子が楽しめる、エネルギッシュでモダンなフードフェス。">
+    <!-- サイト情報 -->
+    <meta name="description" content="イベントに関する問い合わせページ。フォーム送信やSNSリンクを掲載。">
     <meta name="keywords" content="餃子,FES,長浜公園,参加無料,創作餃子">
     <meta name="author" content="ふくおか餃子FES実行委員会">
     <meta name="robots" content="noindex,nofollow">
@@ -24,7 +25,7 @@
     <header class="l-header">
         <div class="l-header-inner">
             <h1>
-                <img src="./img/logo_02.svg" alt="">
+                <img src="./img/logo_02.svg" alt="ふくおか餃子FES">
             </h1>
             <nav>
                 <ul>
@@ -46,8 +47,7 @@
         <nav class="c-breadcrumbs">
             <ol>
                 <li>Home</li>
-                <li></li>
-                <li></li>
+                <li>お問い合わせ</li>
             </ol>
         </nav>
     </header>
@@ -55,20 +55,20 @@
     <main>
 
         <section>
-            <h2 class="">お問い合わせ</h2>
+            <h1 class="c-section-title">お問い合わせ</h1>
             <p>
                 当イベントへのお問い合わせは、下記のフォームよりお願い致します。
             </p>
         </section>
 
-        <form action="" method="">
+        <form action="#" method="post">
             <dl class="l-contact">
                 <div class="c-contact-type">
                     <dt>
                         <label for="inquiry-type">お問い合わせ種別<span>※必須</span></label>
                     </dt>
                     <dd>
-                        <select name="inquiry-type" id="inquiry-type">
+                        <select name="inquiry-type" id="inquiry-type" required>
                             <option value="FESに関すること">FESに関すること</option>
                             <option value="店舗に関すること">店舗に関すること</option>
                             <option value="会場に関すること">会場に関すること</option>
@@ -81,7 +81,7 @@
                         <label for="user-name">お名前<span>※必須</span></label>
                     </dt>
                     <dd>
-                        <input type="text" id="user-name" name="user-name">
+                        <input type="text" id="user-name" name="user-name" required>
                     </dd>
                 </div>
                 <div class="c-contact-type">
@@ -89,7 +89,7 @@
                         <label for="user-name-furigana">ふりがな<span>※必須</span></label>
                     </dt>
                     <dd>
-                        <input type="text" id="user-name-furigana" name="user-name-furigana">
+                        <input type="text" id="user-name-furigana" name="user-name-furigana" required>
                     </dd>
                 </div>
                 <div class="c-contact-type">
@@ -105,7 +105,7 @@
                         <label for="telephone-number">電話番号</label>
                     </dt>
                     <dd>
-                        <input type="text" id="telephone-number" name="telephone-number">
+                        <input type="tel" id="telephone-number" name="telephone-number">
                     </dd>
                 </div>
                 <div class="c-contact-type">
@@ -113,7 +113,7 @@
                         <label for="user-email-address">メールアドレス<span>※必須</span></label>
                     </dt>
                     <dd>
-                        <input type="email" id="user-email-address" name="user-email-address">
+                        <input type="email" id="user-email-address" name="user-email-address" required>
                     </dd>
                 </div>
                 <div class="c-contact-type">
@@ -129,7 +129,7 @@
                         <label for="inquiry-details">お問い合わせ内容<span>※必須</span></label>
                     </dt>
                     <dd>
-                        <textarea name="inquiry-details" id="inquiry-details"></textarea>
+                        <textarea name="inquiry-details" id="inquiry-details" required></textarea>
                     </dd>
                 </div>
             </dl>
@@ -139,7 +139,7 @@
             <div>
                 <p>
                     当イベントの
-                    <a href="">プライバシーポリシー</a>
+                    <a href="#">プライバシーポリシー</a>
                     に同意頂ける場合は「同意する」にチェックを付け「入力内容の確認」ボタンをクリックしてください
                 </p>
                 <p>
