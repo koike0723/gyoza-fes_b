@@ -24,7 +24,10 @@
 }
 
 body{
-
+    background: var(--color-gray);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: var(--fz-16px);
+    color: var(--color-white);
 }
 
 .l-header{
