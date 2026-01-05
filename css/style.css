@@ -3,6 +3,26 @@
 /* 全体
 ----------------------------------------- */
 
+:root{
+    --color-black: #131A12;
+    --color-white: #FFF7F7;
+    --color-yellow: #FFE100;
+    --color-red: #E22A00;
+    --color-super-white: #FFFFFF;
+    --color-gray: #444543;
+    --color-darkgray: #303030;
+    --color-salmon: #FF7D60;
+
+    --fz-64px: 64px;
+    --fz-48px: 48px;
+    --fz-40px: 40px;
+    --fz-24px: 24px;
+    --fz-20px: 20px;
+    --fz-16px: 16px;
+    --fz-14px: 14px;
+    --fz-12px: 12px;
+}
+
 body{
 
 }
