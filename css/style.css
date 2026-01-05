@@ -2,7 +2,6 @@
 
 /* 全体
 ----------------------------------------- */
-
 :root {
     --color-black: #131A12;
     --color-white: #FFF7F7;
@@ -230,6 +229,7 @@ body {
     }
 }
 
+
 /* トップページ
 ----------------------------------------- */
 
@@ -244,6 +244,69 @@ body {
 
 /* よくある質問
 ----------------------------------------- */
+.l-faq-inner{
+    max-width: 760px;
+    margin: 0 auto;
+}
+.l-faq-header{
+    font-size: var(--fz-48px);
+    color: var(--color-white);
+    font-weight: bold;
+    text-align: center;
+}
+.l-faq-list{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.l-faq-list li{
+    font-size: var(--fz-16px);
+    margin: 30px;
+    text-decoration: underline;
+}
+.l-faq-bg{
+    background-color: var(--color-yellow);
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+}
+.l-faq{
+    padding-bottom: 60px;
+}
+.l-faq-about{
+    font-size: var(--fz-16px);
+    font-weight: bold;
+    color: var(--color-black);
+    text-align: center;
+    padding-top: 1em;
+    margin: 0 auto;
+}
+.c-faq-content{
+    padding-block-start: 30px;
+}
+.c-faq-question{
+    font-size: var(--fz-16px);
+    font-weight: bold;
+    padding-block-end: 10px;
+}
+.c-faq-answer{
+    font-size: var(--fz-16px);
+}
+.c-faq-answer a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px){
+    .l-faq-inner{
+        max-width: 92%;
+    }
+.l-faq-header{
+font-size: var(--fz-40px);
+}
+.l-faq-list li{
+    flex-shrink: 0;
+}
+}
 
 /* プライバシーポリシー
 ----------------------------------------- */
