@@ -23,32 +23,38 @@
 
 <body>
     <header class="l-header">
-        <div class="l-header-inner">
-            <h1>
-                <img src="./img/logo_02.svg" alt="ふくおか餃子FES">
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <p>Home</p>
-                    </li>
-                    <li>
-                        <p>店舗一覧</p>
-                    </li>
-                    <li>
-                        <p>よくある質問</p>
-                    </li>
-                    <li>
-                        <p>お問い合せ</p>
-                    </li>
-                </ul>
-            </nav>
+       <div id="top" class="c-top">
+            <div class="l-wrraper c-top__contents">
+                <h1 class="c-logo">
+                    <img class="c-logo--pc" src="./img/logo_02.svg" alt="ふくおか餃子FES">
+                    <img class="c-logo--sp" src="./img/logo_line_02.svg" alt="ふくおか餃子FES">
+                </h1>
+                <nav class="c-header-nav">
+                    <ul class="c-header-nav__list">
+                        <li class="c-header-nav__item">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="c-header-nav__item">
+                            <a href="./shop-list.html">店舗一覧</a>
+                        </li>
+                        <li class="c-header-nav__item">
+                            <a href="./faq.html">よくある質問</a>
+                        </li>
+                        <li class="c-header-nav__item">
+                            <a href="./form.html">お問い合せ</a>
+                        </li>
+                    </ul>
+                    <img class="c-header-nav__hamburger" src="./img/icon_hamburger.png" alt="">
+                </nav>
+            </div>
         </div>
         <nav class="c-breadcrumbs">
-            <ol>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./form.html">お問い合わせ</a></li>
-            </ol>
+            <div class="l-wrraper">
+                <ol class="c-breadcrumbs__list">
+                    <li class="c-breadcrumbs__item"><a href="./index.html">Home</a></li>
+                    <li class="c-breadcrumbs__item"><a href="./form.html">お問い合わせ</a></li>
+                </ol>
+            </div>
         </nav>
     </header>
 

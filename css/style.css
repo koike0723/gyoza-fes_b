@@ -3,7 +3,7 @@
 /* 全体
 ----------------------------------------- */
 
-:root{
+:root {
     --color-black: #131A12;
     --color-white: #FFF7F7;
     --color-yellow: #FFE100;
@@ -23,15 +23,93 @@
     --fz-12px: 12px;
 }
 
-body{
+body {
     background: var(--color-gray);
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: var(--fz-16px);
     color: var(--color-white);
 }
 
-.l-header{
+.l-wrraper {
+    width: min(960px, 92vw);
+    margin: auto;
+}
 
+/* ヘッダー
+----------------------------------------- */
+
+.c-top {
+    background: var(--color-super-white);
+    padding: 20px 0;
+}
+
+.c-top__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-logo {
+    width: 268px;
+}
+
+.c-logo--pc {
+    display: none;
+}
+
+.c-header-nav__list {
+    display: none;
+}
+
+.c-header-nav__hamburger {
+    padding-inline: 10px;
+}
+
+.c-breadcrumbs {
+    font-size: var(--fz-14px);
+}
+
+.c-breadcrumbs__list {
+    display: flex;
+    gap: 5px;
+}
+
+.c-breadcrumbs__item:not(:first-of-type)::before{
+    content: "／";
+    padding-inline-end: 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .c-logo {
+        width: 210px;
+    }
+
+    .c-logo--sp {
+        display: none;
+    }
+
+    .c-logo--pc {
+        display: block;
+    }
+
+    .c-header-nav__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    .c-header-nav__item {
+        color: var(--color-black);
+    }
+
+    .c-header-nav__item::before {
+        content: url(../img/icon_gyoza.png);
+    }
+
+    .c-header-nav__hamburger {
+        display: none;
+        ;
+    }
 }
 
 /* トップページ
