@@ -28,6 +28,7 @@ body {
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: var(--fz-16px);
     color: var(--color-white);
+    line-height: 1.6;
 }
 
 .l-wrraper {
@@ -38,7 +39,7 @@ body {
 /* ヘッダー
 ----------------------------------------- */
 
-.l-header--sub-page{
+.l-header--sub-page {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -80,7 +81,7 @@ body {
     gap: 5px;
 }
 
-.c-breadcrumbs__item:not(:first-of-type)::before{
+.c-breadcrumbs__item:not(:first-of-type)::before {
     content: "／";
     padding-inline-end: 5px;
 }
@@ -121,7 +122,86 @@ body {
 /* フッター
 ----------------------------------------- */
 
+.l-footer-inner {
+    background: var(--color-super-white);
+    padding-block: 50px;
+    color: var(--color-black);
+    font-size: var(--fz-14px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.l-footer-contets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.c-organization {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.c-logo--footer {
+    width: 141px;
+}
+
+.c-organization__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.c-organization__item{
+    display: flex;
+    gap: 10px;
+}
+
+.c-organization__item dt{
+    flex-basis: 56px;
+    font-weight: normal;
+}
+
+.c-organization__item dd {
+    flex-basis: fill;
+}
+
+.c-footer-nav {
+    text-decoration: underline;
+}
+
+.c-sns {
+    padding-inline: 32px;
+}
+
+.c-sns::before {
+    display: block;
+    content: "\\最新情報発信中！/";
+    text-align: center;
+    padding-block-end: 15px;
+}
+
+.c-sns__list {
+    display: flex;
+    gap: 30px;
+}
+
+.c-copyright{
+    font-size: var(--fz-12px);
+    display: block;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .l-footer-contets{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 /* トップページ
 ----------------------------------------- */
