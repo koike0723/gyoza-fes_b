@@ -7,6 +7,7 @@ body {
     font-family: 'Zen Maru Gothic' ,sans-serif;
     background-color: #444543;
     color: #FFF7F7;
+    line-height: 1.6;
 }
 
 .l-header {}
@@ -76,6 +77,17 @@ body {
 .c-faq-answer a{
     font-weight: bold;
     text-decoration: underline;
+}
+@media screen and (max-width: 768px){
+    .l-faq-inner{
+        max-width: 92%;
+    }
+.l-faq-header{
+font-size: 40px;
+}
+.l-faq-list li{
+    flex-shrink: 0;
+}
 }
 
 /* プライバシーポリシー
