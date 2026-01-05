@@ -31,3 +31,36 @@ body{
 
 /* お問合せ
 ------------------------------------------ */
+.c-contact-type__title{
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-inline-start: 8px;
+}
+
+.c-contact-type__title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url(./../img/logo_line_02.svg) no-repeat center/cover;
+
+}
+
+.c-contact-type:has(:required) .c-contact-type__title::after{
+    content: "※必須";
+    font-size: 16px;
+    color: #FF7D60;
+    padding-inline-start: 8px;
+
+}
+
+
+
+.c-contact-type__content{
+    border: solid 1px;
+    background-color: white;
+}
