@@ -222,8 +222,8 @@ body {
     margin: 0 auto;
 }
 .l-faq-header{
-    font-size: 48px;
-    color: #FFF7F7;
+    font-size: var(--fz-48px);
+    color: var(--color-white);
     font-weight: bold;
     text-align: center;
 }
@@ -233,12 +233,12 @@ body {
     padding-bottom: 30px;
 }
 .l-faq-list li{
-    font-size: 16px;
+    font-size: var(--fz-16px);
     margin: 30px;
     text-decoration: underline;
 }
 .l-faq-bg{
-    background-color: #ffe100;
+    background-color: var(--color-yellow);
     width: 200px;
     height: 50px;
     margin: 0 auto;
@@ -247,9 +247,9 @@ body {
     padding-bottom: 60px;
 }
 .l-faq-about{
-    font-size: 16px;
+    font-size: var(--fz-16px);
     font-weight: bold;
-    color: #000;
+    color: var(--color-black);
     text-align: center;
     padding-top: 1em;
     margin: 0 auto;
@@ -258,12 +258,12 @@ body {
     padding-block-start: 30px;
 }
 .c-faq-question{
-    font-size: 16px;
+    font-size: var(--fz-16px);
     font-weight: bold;
     padding-block-end: 10px;
 }
 .c-faq-answer{
-    font-size: 16px;
+    font-size: var(--fz-16px);
 }
 .c-faq-answer a{
     font-weight: bold;
@@ -274,7 +274,7 @@ body {
         max-width: 92%;
     }
 .l-faq-header{
-font-size: 40px;
+font-size: var(--fz-40px);
 }
 .l-faq-list li{
     flex-shrink: 0;
