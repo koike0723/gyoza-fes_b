@@ -158,12 +158,12 @@ body {
     gap: 5px;
 }
 
-.c-organization__item{
+.c-organization__item {
     display: flex;
     gap: 10px;
 }
 
-.c-organization__item dt{
+.c-organization__item dt {
     flex-basis: 56px;
     font-weight: normal;
 }
@@ -192,14 +192,14 @@ body {
     gap: 30px;
 }
 
-.c-copyright{
+.c-copyright {
     font-size: var(--fz-12px);
     display: block;
     text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-    .l-footer-contets{
+    .l-footer-contets {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -271,17 +271,28 @@ h2 {
     font-weight: bold;
     text-align: center;
     background: var(--color-yellow);
+    color: var(--color-black);
     width: 100%;
     bottom: 0;
     display: block;
     padding: 20px 50px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
 
     .c-shop-card {
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
+        box-shadow: 5px 5px 0 0 var(--color-red);
+
+    }
+
+    .c-shop-card img {
+       
+    }
+
+    .c-shop-card_detail {
+        text-align: center;
     }
 }
 
