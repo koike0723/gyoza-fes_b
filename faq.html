@@ -18,33 +18,39 @@
 </head>
 
 <body>
-    <header class="l-header">
-        <div class="l-header-inner">
-            <h1>
-                <img src="./img/logo_02.svg" alt="">
-            </h1>
-            <nav>
-                <ul>
-                    <li>
-                        <p>Home</p>
-                    </li>
-                    <li>
-                        <p>店舗一覧</p>
-                    </li>
-                    <li>
-                        <p>よくある質問</p>
-                    </li>
-                    <li>
-                        <p>お問い合せ</p>
-                    </li>
-                </ul>
-            </nav>
+    <header class="l-header l-header--sub-page">
+        <div id="top" class="c-top">
+            <div class="l-wrraper c-top__contents">
+                <h1 class="c-logo">
+                    <img class="c-logo--pc" src="./img/logo_02.svg" alt="ふくおか餃子FES">
+                    <img class="c-logo--sp" src="./img/logo_line_02.svg" alt="ふくおか餃子FES">
+                </h1>
+                <nav class="c-header-nav">
+                    <ul class="c-header-nav__list">
+                        <li class="c-header-nav__item">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="c-header-nav__item">
+                            <a href="./shop-list.html">店舗一覧</a>
+                        </li>
+                        <li class="c-header-nav__item">
+                            <a href="./faq.html">よくある質問</a>
+                        </li>
+                        <li class="c-header-nav__item">
+                            <a href="./form.html">お問い合せ</a>
+                        </li>
+                    </ul>
+                    <img class="c-header-nav__hamburger" src="./img/icon_hamburger.png" alt="">
+                </nav>
+            </div>
         </div>
         <nav class="c-breadcrumbs">
-            <ol>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="faq.html">よくある質問</a></li>
-            </ol>
+            <div class="l-wrraper">
+                <ol class="c-breadcrumbs__list">
+                    <li class="c-breadcrumbs__item"><a href="./index.html">Home</a></li>
+                    <li class="c-breadcrumbs__item"><a href="faq.html">よくある質問</a></li>
+                </ol>
+            </div>
         </nav>
     </header>
     <main>
@@ -122,39 +128,50 @@
         </section>
     </main>
     <footer class="l-footer">
-        <a href="#" class="c-top-btn">top</a>
+        <div class="l-wrraper">
+            <a href="#top" class="c-top-btn">top</a>
+        </div>
         <div class="l-footer-inner">
-            <div class="c-organization">
-                <div class="c-logo">
-                    <img src="./img/logo_02.svg" alt="">
+            <div class="l-wrraper l-footer-contets">
+                <div class="c-organization">
+                    <div class="c-logo c-logo--footer">
+                        <img src="./img/logo_02.svg" alt="ふくおか餃子FES">
+                    </div>
+                    <dl class="c-organization__list">
+                        <div class="c-organization__item">
+                            <dt>主催</dt>
+                            <dd>ふくおか餃子フェス実行委員会</dd>
+                        </div>
+                        <div class="c-organization__item">
+                            <dt>協賛</dt>
+                            <dd>九州餃子部</dd>
+                        </div>
+                        <div class="c-organization__item">
+                            <dt>制作協力</dt>
+                            <dd>創造社リカレントスクール 福岡校</dd>
+                        </div>
+                    </dl>
                 </div>
-                <dl>
-                    <dt>主催</dt>
-                    <dd>ふくおか餃子フェス実行委員会</dd>
-                    <dt>協賛</dt>
-                    <dd>九州餃子部</dd>
-                    <dt>制作協力</dt>
-                    <dd>創造社リカレントスクール 福岡校</dd>
-                </dl>
+                <nav class="c-footer-nav"><a href="./privacy.html">プライバシーポリシー</a></nav>
+                <div class="c-sns">
+                    <ul class="c-sns__list">
+                        <li class="c-sns__item">
+                            <a href="#"><img src="./img/sns_icon_x.png" alt="エックス"></a>
+                        </li>
+                        <li class="c-sns__item">
+                            <a href="#"><img src="./img/sns_icon_instagram.png" alt="インスタグラム"></a>
+                        </li>
+                        <li class="c-sns__item">
+                            <a href="#"><img src="./img/sns_icon_line.png" alt="ライン"></a>
+                        </li>
+                        <li class="c-sns__item">
+                            <a href="#"><img src="./img/sns_icon_facebook.png" alt="フェイスブック"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav><a href="#">プライバシーポリシー</a></nav>
-            <div class="c-sns">
-                <p></p>
-                <ul>
-                    <li>
-                        <a href="#"><img src="" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="" alt=""></a>
-                    </li>
-                </ul>
-                <small>&copy; 2025 ふくおか餃子FES実行委員会</small>
+            <div class="l-wrraper">
+                <small class="c-copyright">&copy; 2025 ふくおか餃子FES実行委員会</small>
             </div>
         </div>
     </footer>
