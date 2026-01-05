@@ -224,7 +224,7 @@ body {
 /* お問合せ
 ------------------------------------------ */
 
-/* レイアウト */
+/* ------レイアウト------- */
 .l-contact-heading{
     display: flex;
     flex-direction: column;
@@ -248,7 +248,14 @@ body {
     align-items: center;
     gap: 24px;
 }
+/* -------------------------- */
 
+/* -----------システム関係---- */
+
+.c-contact-type{
+    display: flex;
+    flex-direction: column;
+}
 
 /* アイコンを追加 */
 .c-contact-type__title {
@@ -267,7 +274,7 @@ body {
     width: 24px;
     height: 24px;
     /* ↓後で画像変える */
-    background: url(./../img/logo_line_02.svg) no-repeat center/cover;
+    background: url(./../img/icon_gyoza.png) no-repeat center/cover;
 
 }
 
@@ -317,4 +324,29 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+}
+
+/* ---------------------- */
+
+/* -------pc版----------- */
+
+@media screen and (min-width: 768px) {
+    .c-contact-type{
+        flex-direction: row ;
+        align-items: start;
+    }
+    .c-contact-type__title{
+        width: 210px;
+        flex-shrink: 0;
+    }
+
+    .c-contact-type__title + *{
+        margin-inline-start: 8px;
+    }
+
+    .c-contact-type__content{
+        flex-grow: 1;
+    }
+
+
 }
