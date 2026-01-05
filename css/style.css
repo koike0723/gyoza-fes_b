@@ -3,11 +3,17 @@
 /* 全体
 ----------------------------------------- */
 
-body{
-
+body {
+    background-color: #444543;
+    color: #FFFFFF;
 }
 
-.l-header{
+.l-header {}
+
+.l-wrapper{
+    max-width: 968px;
+    width: 92%;
+    margin: 0 auto;
 
 }
 
@@ -31,7 +37,35 @@ body{
 
 /* お問合せ
 ------------------------------------------ */
-.c-contact-type__title{
+
+/* レイアウト */
+.l-contact-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.l-contact-heading +*{
+    margin-block-start: 30px;
+    margin-block-end: 100px;
+}
+
+.l-contact-form{
+    display: grid;
+    gap: 24px;
+}
+
+.l-contact-agree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+
+/* アイコンを追加 */
+.c-contact-type__title {
     font-size: 16px;
     font-weight: normal;
     display: flex;
@@ -40,17 +74,19 @@ body{
     padding-inline-start: 8px;
 }
 
-.c-contact-type__title::before{
+.c-contact-type__title::before {
     content: "";
     position: absolute;
     left: 0;
     width: 24px;
     height: 24px;
+    /* ↓後で画像変える */
     background: url(./../img/logo_line_02.svg) no-repeat center/cover;
 
 }
 
-.c-contact-type:has(:required) .c-contact-type__title::after{
+/* 必須項目を付ける */
+.c-contact-type:has(:required) .c-contact-type__title::after {
     content: "※必須";
     font-size: 16px;
     color: #FF7D60;
@@ -58,9 +94,41 @@ body{
 
 }
 
+/* 入力フォーム */
+.c-contact-type__content {
+    color: black;
+}
 
-
-.c-contact-type__content{
-    border: solid 1px;
+.c-contact-type__content >*{
     background-color: white;
+    width: 100%;
+}
+
+/* お問い合わせ種別 */
+.c-contact-type__content--select >*{
+    width: 267px;
+}
+
+/* お問い合わせ内容入力欄 */
+.c-contact-type__content--long >*{
+    height: 158px;
+
+}
+
+
+/* プライバシーポリシー同意欄 */
+.c-contact-agree input[type="checkbox"] {
+    appearance: auto;
+    -webkit-appearance: auto;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.c-contact-agree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
