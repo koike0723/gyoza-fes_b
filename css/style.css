@@ -2,20 +2,101 @@
 
 /* 全体
 ----------------------------------------- */
-
-body{
-
+:root {
+    --color-black: #131A12;
+    --color-white: #FFF7F7;
+    --color-yellow: #FFE100;
+    --color-red: #E22A00;
+    --color-superwhite: #fff;
+    --color-gray: #444543;
+    --color-darkgray: #303030;
+    --color-salmon: #FF7D60;
 }
 
-.l-header{
-
+body {
+    background: var(--color-gray);
+    font-family: "Zen Maru Gothic jp";
 }
+
+.l-header {}
 
 /* トップページ
 ----------------------------------------- */
 
 /* 店舗リスト
 ----------------------------------------- */
+main {
+    width: 92%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--color-white);
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.c-shop-card {
+    background: var(--color-darkgray);
+    box-shadow: 20px 20px 0 0 var(--color-red);
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.c-shop-card img {
+    height: 345px;
+    width: 345px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.c-shop-card_detail {
+    /* background: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 10px 10px 0;
+    width: 100%;
+}
+
+.c-shop-card_detailtext {
+    color: var(--color-white);
+}
+
+.c-shop-card__shopname {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline 2px;
+    text-decoration-color: var(--color-red);
+    text-underline-offset: 0.2em;
+}
+
+.c-shop-card_detailgyoza {
+    margin-top: 28px;
+    font-size: 24px;
+    line-height: 2;
+}
+
+.c-shop-card a {
+    font-weight: bold;
+    text-align: center;
+    background: var(--color-yellow);
+    width: 100%;
+    bottom: 0;
+    display: block;
+    padding: 20px 50px;
+}
+
+@media screen and (max-width: 375px) {
+
+    .c-shop-card {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 /* 店舗詳細
 ----------------------------------------- */
