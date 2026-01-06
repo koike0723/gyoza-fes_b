@@ -301,8 +301,40 @@ iframe {
 /* 開催概要 */
 
 /* アクセス */
+#access {
+    background: var(--color-super-white);
+}
+
+#access h2 {
+    color: var(--color-black);
+    font-size: var(--fz-40px);
+    font-weight: bold;
+}
 
 /* お知らせ */
+#news h2 {
+    font-size: var(--fz-40px);
+    font-weight: bold;
+    color: var(--color-yellow);
+}
+
+#news dl {
+    background: var(--color-super-white);
+    height: 317px;
+    overflow: hidden scroll;
+}
+
+.c-news__item {
+    color: var(--color-black);
+    font-size: var(--fz-16px);
+    display: grid;
+    row-gap: 25px;
+}
+
+.c-news__item dd {
+    text-decoration: underline;
+    text-decoration-color: var(--color-red);
+}
 
 /* 店舗リスト
 ----------------------------------------- */
