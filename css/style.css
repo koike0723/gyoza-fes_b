@@ -203,6 +203,16 @@ body {
     }
 }
 
+/* -------ボタン------- */
+.c-btn{
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: var(--fz-16px);
+    padding-inline: 48px;
+    padding-block: 16px;
+}
+
 /* トップページ
 ----------------------------------------- */
 
@@ -321,6 +331,8 @@ body {
 }
 
 .c-contact-agree{
+    width: clamp(21.563rem, 17.447rem + 17.559vw, 33.25rem);
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
