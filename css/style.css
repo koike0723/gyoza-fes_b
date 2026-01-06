@@ -15,6 +15,7 @@
     --fz-64px: 64px;
     --fz-48px: 48px;
     --fz-40px: 40px;
+    --fz-32px: 32px;
     --fz-24px: 24px;
     --fz-20px: 20px;
     --fz-16px: 16px;
@@ -233,6 +234,7 @@ body {
 /* トップページ
 ----------------------------------------- */
 
+/* メインビジュアル */
 .c-mv-area {
     background: url(../img/mv.png) no-repeat center / cover;
     height: 680px;
@@ -285,6 +287,49 @@ body {
     font-weight: bold;
 }
 
+/* リードコピー */
+.l-lead-copy {
+    padding-block: 100px;
+}
+
+.c-lead-copy__text {
+    background: var(--color-darkgray);
+    border: 3px solid var(--color-white);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding-block: 100px;
+    padding-inline: clamp(10px, -21.690px + 8.451vw, 100px);
+    font-size: var(--fz-20px);
+
+}
+
+.c-lead-copy__text span:first-of-type {
+    font-size: clamp(var(--fz-32px), 26.366px + 1.502vw, var(--fz-48px));
+    font-weight: bold;
+    text-align: center;
+}
+
+.c-lead-copy__text span:first-of-type span {
+    color: var(--color-salmon);
+}
+
+.c-lead-copy__text span:last-of-type {
+    font-weight: bold;
+    color: var(--color-yellow);
+}
+
+@media screen and (min-width: 768px) {
+    .c-lead-copy__text span:not(:first-of-type) {
+        text-align-last: center;
+    }
+
+    .sp-only{
+        display: none;
+    }
+}
 
 .c-shop-card img {
     width: 100%;
@@ -293,8 +338,6 @@ body {
 iframe {
     width: 100%;
 }
-
-/* リードコピー */
 
 /* 店舗リスト */
 
