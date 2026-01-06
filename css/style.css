@@ -214,11 +214,11 @@ body {
 
 /* お知らせ詳細
 ----------------------------------------- */
-article {
+/* article {
     width: 960px;
     margin: 0 auto;
     padding-block-start: 100px;
-}
+} */
 
 time {
     font-size: var(--fz-12px);
@@ -233,23 +233,25 @@ time {
     padding-block-end: 50px;
 }
 
-.l-news-inner {
-    /* max-width: 80%; */
+/* .l-news-inner {
+    max-width: 80%;
     padding: clamp(0.938rem, -0.933rem + 7.981vw, 6.25rem);
     margin: 0 auto;
-}
+} */
 
 .c-news__titledetail {
     padding-block-end: 30px;
 }
 .l-news-img{
+    width: clamp(35.688rem, 22.150rem + 28.167vw, 47.5rem);
     display: block;
     text-align: center;
+
 }
 .gyoza-img {
-    width: clamp(21.563rem, 12.430rem + 38.967vw, 47.5rem);
+    /* width: clamp(35.688rem, 22.150rem + 28.167vw, 47.5rem); */
     height: clamp(21.563rem, 20.352rem + 5.164vw, 25rem);
-    /* width: clamp(21.563rem, 8.028rem + 57.746vw, 60rem); */
+    width: clamp(21.563rem, 8.028rem + 57.746vw, 60rem);
     object-fit: cover;
 }
 
@@ -290,19 +292,22 @@ time {
     gap: 5px;
 }
 @media screen and (max-width: 768px) {
-     article {
-        width: 92%;
+    .l-news-img{
+        width: clamp(21.563rem, 8.119rem + 57.36vw, 35.688rem);
     }
+     /* article {
+        width: 92%;
+    } */
     /*.c-news__title{
     }
     .l-news-inner{
        max-width: 345px;
     }:
     */
-    .gyoza-img {
+    /* .gyoza-img {
         height: 345px;
-        /* width: clamp(21.563rem, -3.664rem + 107.634vw, 48rem); */
-    } 
+        /* width: clamp(21.563rem, -3.664rem + 107.634vw, 48rem); 
+    }  */
 }
 
 /* よくある質問
