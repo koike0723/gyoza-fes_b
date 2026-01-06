@@ -310,6 +310,49 @@ font-size: var(--fz-40px);
 
 /* プライバシーポリシー
 ----------------------------------------- */
+section{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.l-privacy-header {
+    font-size: clamp(2.5rem, 2.324rem + 0.751vw, 3rem);
+    margin: 0 auto;
+    font-weight: bold;
+    color: var(--color-white);
+    text-align: center;
+    padding-block-end: 50px;
+}
+
+.l-privacy-inner {
+    width: clamp(21.563rem, 8.028rem + 57.746vw, 60rem);
+    margin: 0 auto;
+    background-color: var(--color-super-white);
+}
+.c-privacy{
+    padding-block-end: 50px;
+}
+.c-privacy-content {
+    color: var(--color-gray);
+    width: 79%;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding-top: 50px;
+}
+.c-privacy-title{
+    font-size: var(--fz-20px);
+    font-weight: bold;
+    list-style: style;
+}
+.c-privacy-desc{
+    font-weight: normal;
+    padding-block-start: 10px;
+}
+@media screen and (max-width: 768px){
+    .l-privacy-header{
+        width: 70%;
+    }
+}
+
 
 /* お問合せ
 ------------------------------------------ */
