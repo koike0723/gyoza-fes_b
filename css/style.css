@@ -220,7 +220,8 @@ main {
 
 h2 {
     color: var(--color-white);
-    font-size: 48px;
+    font-size: var(--fz-48px);
+    font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -241,12 +242,12 @@ h2 {
 }
 
 .c-shop-card_detail {
-    /* background: blueviolet; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 10px 10px 10px 0;
     width: 100%;
+    font-size: var(--fz-24px);
 }
 
 .c-shop-card_detailtext {
@@ -254,16 +255,14 @@ h2 {
 }
 
 .c-shop-card__shopname {
-    font-size: 24px;
     font-weight: bold;
-    text-decoration: underline 2px;
+    text-decoration: underline 1.5px;
     text-decoration-color: var(--color-red);
-    text-underline-offset: 0.2em;
+    text-underline-offset: 0.3em;
 }
 
 .c-shop-card_detailgyoza {
     margin-top: 28px;
-    font-size: 24px;
     line-height: 2;
 }
 
@@ -273,26 +272,47 @@ h2 {
     background: var(--color-yellow);
     color: var(--color-black);
     width: 100%;
-    bottom: 0;
     display: block;
     padding: 20px 50px;
 }
 
-@media screen and (min-width: 375px) {
+.sp_br {
+    display: none;
+}
+
+@media screen and (max-width: 376px) {
 
     .c-shop-card {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
         box-shadow: 5px 5px 0 0 var(--color-red);
-
+        gap: 20px;
+        padding: 10px;
     }
 
     .c-shop-card img {
-       
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
     }
 
     .c-shop-card_detail {
         text-align: center;
+        font-size: var(--fz-20px);
+        margin: 0;
+    }
+
+    .c-shop-card_detailgyoza {
+        margin-top: 25px;
+        line-height: 1.5;
+    }
+
+    .c-shop-card a {
+        margin-top: 20px;
+    }
+
+    .sp_br {
+        display: block;
     }
 }
 
