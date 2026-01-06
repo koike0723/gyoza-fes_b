@@ -263,18 +263,19 @@ body {
     font-weight: normal;
     display: flex;
     align-items: center;
-    position: relative;
-    padding-inline-start: 8px;
+    gap: 8px;
+    flex-shrink: 0;
 }
 
 .c-contact-type__title::before {
     content: "";
-    position: absolute;
-    left: 0;
+    display: inline-block;
     width: 24px;
     height: 24px;
     /* ↓後で画像変える */
     background: url(./../img/icon_gyoza02.png) no-repeat center/cover;
+    flex-shrink: 0;
+    white-space: nowrap;
 
 }
 
@@ -283,7 +284,7 @@ body {
     content: "※必須";
     font-size: 16px;
     color: #FF7D60;
-    padding-inline-start: 8px;
+    padding-inline-start: 4px;
 
 }
 
@@ -336,8 +337,7 @@ body {
         align-items: start;
     }
     .c-contact-type__title{
-        width: 210px;
-        flex-shrink: 0;
+        width: 240px;
     }
 
     .c-contact-type__title + *{
