@@ -32,7 +32,7 @@ body {
 
 .l-wrraper {
     width: min(960px, 92vw);
-    margin: auto;
+    margin-inline: auto;
 }
 
 /* ヘッダー
@@ -121,7 +121,7 @@ body {
 /* フッター
 ----------------------------------------- */
 
-.l-btn-area{
+.l-btn-area {
     display: flex;
     justify-content: flex-end;
 }
@@ -233,6 +233,67 @@ body {
 /* トップページ
 ----------------------------------------- */
 
+.c-mv-area {
+    background: url(../img/mv.png) no-repeat center / cover;
+    height: 680px;
+    padding-block: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l-main-copy {
+    display: flex;
+    justify-self: center;
+    flex-shrink: 0;
+}
+
+.c-main-copy__text {
+    font-family: 'Zen Antique', serif;
+    text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.25);
+    font-size: clamp(var(--fz-40px), 31.549px + 2.254vw, var(--fz-64px));
+    ;
+}
+
+.l-mv-event-info {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.c-mv-event-info {
+    display: flex;
+    justify-content: flex-end;
+    font-size: clamp(var(--fz-20px), 18.592px + 0.376vw, var(--fz-24px));
+}
+
+.c-mv-event-info__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.c-mv-event-info__item {
+    display: flex;
+}
+
+.c-mv-event-info__item dt::after {
+    content: "：";
+}
+
+.c-mv-event-info__item dd {
+    font-weight: bold;
+}
+
+
+.c-shop-card img {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
 /* 店舗リスト
 ----------------------------------------- */
 
@@ -244,36 +305,42 @@ body {
 
 /* よくある質問
 ----------------------------------------- */
-.l-faq-inner{
+.l-faq-inner {
     max-width: 760px;
     margin: 0 auto;
 }
-.l-faq-header{
+
+.l-faq-header {
     font-size: var(--fz-48px);
     color: var(--color-white);
     font-weight: bold;
     text-align: center;
 }
-.l-faq-list{
+
+.l-faq-list {
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
 }
-.l-faq-list li{
+
+.l-faq-list li {
     font-size: var(--fz-16px);
     margin: 30px;
     text-decoration: underline;
 }
-.l-faq-bg{
+
+.l-faq-bg {
     background-color: var(--color-yellow);
     width: 200px;
     height: 50px;
     margin: 0 auto;
 }
-.l-faq{
+
+.l-faq {
     padding-bottom: 60px;
 }
-.l-faq-about{
+
+.l-faq-about {
     font-size: var(--fz-16px);
     font-weight: bold;
     color: var(--color-black);
@@ -281,39 +348,47 @@ body {
     padding-top: 1em;
     margin: 0 auto;
 }
-.c-faq-content{
+
+.c-faq-content {
     padding-block-start: 30px;
 }
-.c-faq-question{
+
+.c-faq-question {
     font-size: var(--fz-16px);
     font-weight: bold;
     padding-block-end: 10px;
 }
-.c-faq-answer{
+
+.c-faq-answer {
     font-size: var(--fz-16px);
 }
-.c-faq-answer a{
+
+.c-faq-answer a {
     font-weight: bold;
     text-decoration: underline;
 }
-@media screen and (max-width: 768px){
-    .l-faq-inner{
+
+@media screen and (max-width: 768px) {
+    .l-faq-inner {
         max-width: 92%;
     }
-.l-faq-header{
-font-size: var(--fz-40px);
-}
-.l-faq-list li{
-    flex-shrink: 0;
-}
+
+    .l-faq-header {
+        font-size: var(--fz-40px);
+    }
+
+    .l-faq-list li {
+        flex-shrink: 0;
+    }
 }
 
 /* プライバシーポリシー
 ----------------------------------------- */
-section{
+section {
     max-width: 960px;
     margin: 0 auto;
 }
+
 .l-privacy-header {
     font-size: clamp(2.5rem, 2.324rem + 0.751vw, 3rem);
     margin: 0 auto;
@@ -328,9 +403,11 @@ section{
     margin: 0 auto;
     background-color: var(--color-super-white);
 }
-.c-privacy{
+
+.c-privacy {
     padding-block-end: 50px;
 }
+
 .c-privacy-content {
     color: var(--color-gray);
     width: 79%;
@@ -338,17 +415,20 @@ section{
     line-height: 1.6;
     padding-top: 50px;
 }
-.c-privacy-title{
+
+.c-privacy-title {
     font-size: var(--fz-20px);
     font-weight: bold;
     list-style: style;
 }
-.c-privacy-desc{
+
+.c-privacy-desc {
     font-weight: normal;
     padding-block-start: 10px;
 }
-@media screen and (max-width: 768px){
-    .l-privacy-header{
+
+@media screen and (max-width: 768px) {
+    .l-privacy-header {
         width: 70%;
     }
 }
