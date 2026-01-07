@@ -219,7 +219,9 @@ body {
     margin: 0 auto;
     padding-block-start: 100px;
 } */
-
+.l-news-time{
+    padding-top: 50px;
+}
 time {
     font-size: var(--fz-12px);
 }
@@ -243,15 +245,13 @@ time {
     padding-block-end: 30px;
 }
 .l-news-img{
-    width: clamp(35.688rem, 22.150rem + 28.167vw, 47.5rem);
     display: block;
     text-align: center;
-
+    margin: 0 auto;
 }
 .gyoza-img {
-    /* width: clamp(35.688rem, 22.150rem + 28.167vw, 47.5rem); */
-    height: clamp(21.563rem, 20.352rem + 5.164vw, 25rem);
-    width: clamp(21.563rem, 8.028rem + 57.746vw, 60rem);
+    width: clamp(21.563rem, 12.430rem + 38.967vw, 47.5rem);
+    height: 400px;
     object-fit: cover;
 }
 
