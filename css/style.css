@@ -234,6 +234,14 @@ body {
 /* トップページ
 ----------------------------------------- */
 
+/* 全体 */
+
+.c-section-title{
+    font-size: clamp(var(--fz-40px), 37.183px + 0.751vw, var(--fz-48px));
+    color: var(--color-yellow);
+    font-weight: bold;
+}
+
 /* メインビジュアル */
 .c-mv-area {
     background: url(../img/mv.png) no-repeat center / cover;
