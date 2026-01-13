@@ -311,27 +311,6 @@ iframe {
 /* 開催概要 */
 
 /* アクセス */
-#access {
-    background: var(--color-super-white);
-}
-
-#access h2 {
-    color: var(--color-black);
-    font-size: var(--fz-40px);
-    font-weight: bold;
-    position: relative;
-    padding-left: 5px;
-}
-
-#access h2::before {
-    content: url(../img/icon_gyoza.png);
-    position: absolute;
-}
-
-.c-event-info__list {
-    color: var(--color-black);
-
-}
 
 /* お知らせ */
 #news h2 {
