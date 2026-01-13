@@ -142,7 +142,7 @@ body {
     content: url(../img/arrow.png);
 }
 
-.c-top-btn a {
+.c-top-back {
     color: var(--color-black);
     font-size: var(--fz-12px);
     font-weight: bold;
