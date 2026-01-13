@@ -402,7 +402,7 @@ section{
 
 /* アイコンを追加 */
 .c-contact-type__title {
-    font-size: 16px;
+    font-size: var(--fz-16px);
     font-weight: normal;
     display: flex;
     align-items: center;
@@ -425,19 +425,19 @@ section{
 /* 必須項目を付ける */
 .c-contact-type:has(:required) .c-contact-type__title::after {
     content: "※必須";
-    font-size: 16px;
-    color: #FF7D60;
+    font-size: var(--fz-16px);
+    color: var(--color-salmon);
     padding-inline-start: 4px;
 
 }
 
 /* 入力フォーム */
 .c-contact-type__content {
-    color: black;
+    color: var(--color-black);
 }
 
 .c-contact-type__content >*{
-    background-color: white;
+    background-color: var(--color-white);
     width: 100%;
 }
 
