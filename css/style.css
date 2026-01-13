@@ -30,7 +30,7 @@ body {
     color: var(--color-white);
     line-height: 1.6;
 }
- 
+
 .l-wrraper {
     width: min(960px, 92vw);
     margin: auto;
@@ -115,7 +115,7 @@ body {
 
     .c-header-nav__hamburger {
         display: none;
-        
+
     }
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 /* -------ボタン------- */
-.c-btn{
+.c-btn {
     background-color: var(--color-yellow);
     color: var(--color-black);
     font-weight: bold;
@@ -351,7 +351,7 @@ h2 {
 
 /* 店舗詳細
 ----------------------------------------- */
-.l-section__shop-detail+*{
+.l-section__shop-detail+* {
     margin-block-start: 30px;
 }
 
@@ -370,9 +370,11 @@ h2 {
     align-items: end;
     gap: 20px;
 }
-.c-shop-introduction +*{
+
+.c-shop-introduction+* {
     margin-block-start: 30px;
 }
+
 .c-shop-introduction__description {
     display: flex;
     flex-direction: column;
@@ -392,7 +394,7 @@ h2 {
 }
 
 .c-shop-introduction__address__phone-number,
-.c-shop-introduction__address__email-address{
+.c-shop-introduction__address__email-address {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -413,45 +415,48 @@ h2 {
     width: 24px;
     height: 24px;
 }
+
 /* ----商品紹介----- */
-.c-product-introduction{
+.c-product-introduction {
     display: flex;
     flex-direction: column;
-}                  
+}
 
 .c-product-introduction__img>* {
     width: clamp(21.563rem, 18.812rem + 11.737vw, 29.375rem);
 }
 
-.c-product-introduction__img +*{
+.c-product-introduction__img+* {
     margin-block-end: 30px;
 }
 
-.c-product-introduction__description{
+.c-product-introduction__description {
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: clamp(21.563rem, 18.812rem + 11.737vw, 29.375rem);
 }
 
-.c-product-introduction__description__detail{
+.c-product-introduction__description__detail {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.c-product-introduction__description__detail>*{
+.c-product-introduction__description__detail>* {
     font-size: var(--fz-24px);
     font-weight: bold;
 }
 
 .c-btn--sop-detail {
-    display: flex;
-    justify-content: center;
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-    .c-product-introduction{
+    .c-product-introduction {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -467,9 +472,10 @@ h2 {
     margin: 0 auto;
     padding-block-start: 100px;
 } */
-.l-news-time{
+.l-news-time {
     padding-block-start: 50px;
 }
+
 time {
     font-size: var(--fz-12px);
 }
@@ -492,11 +498,13 @@ time {
 .c-news__titledetail {
     padding-block-end: 30px;
 }
-.l-news-img{
+
+.l-news-img {
     display: block;
     text-align: center;
     margin: 0 auto;
 }
+
 .gyoza-img {
     width: clamp(21.563rem, 12.430rem + 38.967vw, 47.5rem);
     height: 400px;
@@ -539,8 +547,9 @@ time {
     display: flex;
     gap: 5px;
 }
+
 @media screen and (max-width: 768px) {
-    .l-news-img{
+    .l-news-img {
         width: clamp(21.563rem, 8.119rem + 57.36vw, 35.688rem);
     }
 }
@@ -578,7 +587,7 @@ time {
     margin: 0 auto;
 }
 
-.l-faq{
+.l-faq {
     padding-block-end: 60px;
 }
 
@@ -680,34 +689,35 @@ section {
 ------------------------------------------ */
 
 /* ------レイアウト------- */
-.l-contact-heading{
+.l-contact-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
 }
 
-.l-contact-heading +*{
+.l-contact-heading+* {
     margin-block-start: 30px;
     margin-block-end: 100px;
 }
 
-.l-contact-form{
+.l-contact-form {
     display: grid;
     gap: 24px;
 }
 
-.l-contact-agree{
+.l-contact-agree {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
 }
+
 /* -------------------------- */
 
 /* -----------システム関係---- */
 
-.c-contact-type{
+.c-contact-type {
     display: flex;
     flex-direction: column;
 }
@@ -748,18 +758,18 @@ section {
     color: var(--color-black);
 }
 
-.c-contact-type__content >*{
+.c-contact-type__content>* {
     background-color: var(--color-white);
     width: 100%;
 }
 
 /* お問い合わせ種別 */
-.c-contact-type__content--select >*{
+.c-contact-type__content--select>* {
     width: 267px;
 }
 
 /* お問い合わせ内容入力欄 */
-.c-contact-type__content--long >*{
+.c-contact-type__content--long>* {
     height: 158px;
 
 }
@@ -775,7 +785,7 @@ section {
     cursor: pointer;
 }
 
-.c-contact-agree{
+.c-contact-agree {
     width: clamp(21.563rem, 17.447rem + 17.559vw, 33.25rem);
     text-align: center;
     display: flex;
@@ -789,19 +799,20 @@ section {
 /* -------pc版----------- */
 
 @media screen and (min-width: 768px) {
-    .c-contact-type{
-        flex-direction: row ;
+    .c-contact-type {
+        flex-direction: row;
         align-items: start;
     }
-    .c-contact-type__title{
+
+    .c-contact-type__title {
         width: 240px;
     }
 
-    .c-contact-type__title + *{
+    .c-contact-type__title+* {
         margin-inline-start: 8px;
     }
 
-    .c-contact-type__content{
+    .c-contact-type__content {
         flex-grow: 1;
     }
 
