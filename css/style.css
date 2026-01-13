@@ -321,6 +321,7 @@ iframe {
     font-size: var(--fz-40px);
     font-weight: bold;
     color: var(--color-yellow);
+    margin-bottom: 30px;
 }
 
 #news div {
@@ -328,7 +329,7 @@ iframe {
 }
 
 #news dl {
-    height: 247px;
+    height: 300px;
     overflow-y: scroll;
 }
 
@@ -357,6 +358,7 @@ iframe {
 .c-news__item dd {
     border-bottom: 2px solid var(--color-red);
 }
+
 
 /* 店舗リスト
 ----------------------------------------- */
