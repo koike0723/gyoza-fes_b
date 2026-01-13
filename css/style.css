@@ -122,7 +122,7 @@ body {
 /* フッター
 ----------------------------------------- */
 
-.l-btn-area{
+.l-btn-area {
     display: flex;
     justify-content: flex-end;
 }
@@ -351,6 +351,114 @@ h2 {
 
 /* 店舗詳細
 ----------------------------------------- */
+.l-section__shop-detail+*{
+    margin-block-start: 30px;
+}
+
+.c-section-title {
+    font-size: var(--fz-40px);
+    font-weight: bold;
+}
+
+.c-section-title+* {
+    margin-block-start: 30px;
+}
+
+.c-shop-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+.c-shop-introduction +*{
+    margin-block-start: 30px;
+}
+.c-shop-introduction__description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.c-shop-introduction__description__name {
+    font-size: var(--fz-24px);
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-red);
+}
+
+.c-shop-introduction__address {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-shop-introduction__address__phone-number,
+.c-shop-introduction__address__email-address{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.c-shop-introduction__address__phone-number::before {
+    content: "";
+    display: block;
+    background: url(./../img/phone-icon.png) no-repeat center center/cover;
+    width: 24px;
+    height: 24px;
+}
+
+.c-shop-introduction__address__email-address::before {
+    content: "";
+    display: inline-block;
+    background: url(./../img/mail-icon.png) no-repeat center center/cover;
+    width: 24px;
+    height: 24px;
+}
+/* ----商品紹介----- */
+.c-product-introduction{
+    display: flex;
+    flex-direction: column;
+}                  
+
+.c-product-introduction__img>* {
+    width: clamp(21.563rem, 18.812rem + 11.737vw, 29.375rem);
+}
+
+.c-product-introduction__img +*{
+    margin-block-end: 30px;
+}
+
+.c-product-introduction__description{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: clamp(21.563rem, 18.812rem + 11.737vw, 29.375rem);
+}
+
+.c-product-introduction__description__detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.c-product-introduction__description__detail>*{
+    font-size: var(--fz-24px);
+    font-weight: bold;
+}
+
+.c-btn--sop-detail {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .c-product-introduction{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
 
 /* お知らせ詳細
 ----------------------------------------- */
@@ -439,36 +547,42 @@ time {
 
 /* よくある質問
 ----------------------------------------- */
-.l-faq-inner{
+.l-faq-inner {
     max-width: 760px;
     margin: 0 auto;
 }
-.l-faq-header{
+
+.l-faq-header {
     font-size: var(--fz-48px);
     color: var(--color-white);
     font-weight: bold;
     text-align: center;
 }
-.l-faq-list{
+
+.l-faq-list {
     display: flex;
     justify-content: center;
     padding-block-end: 30px;
 }
-.l-faq-list li{
+
+.l-faq-list li {
     font-size: var(--fz-16px);
     margin: 30px;
     text-decoration: underline;
 }
-.l-faq-bg{
+
+.l-faq-bg {
     background-color: var(--color-yellow);
     width: 200px;
     height: 50px;
     margin: 0 auto;
 }
+
 .l-faq{
     padding-block-end: 60px;
 }
-.l-faq-about{
+
+.l-faq-about {
     font-size: var(--fz-16px);
     font-weight: bold;
     color: var(--color-black);
@@ -476,39 +590,47 @@ time {
     padding-block-start: 1em;
     margin: 0 auto;
 }
-.c-faq-content{
+
+.c-faq-content {
     padding-block-start: 30px;
 }
-.c-faq-question{
+
+.c-faq-question {
     font-size: var(--fz-16px);
     font-weight: bold;
     padding-block-end: 10px;
 }
-.c-faq-answer{
+
+.c-faq-answer {
     font-size: var(--fz-16px);
 }
-.c-faq-answer a{
+
+.c-faq-answer a {
     font-weight: bold;
     text-decoration: underline;
 }
-@media screen and (max-width: 768px){
-    .l-faq-inner{
+
+@media screen and (max-width: 768px) {
+    .l-faq-inner {
         max-width: 92%;
     }
-.l-faq-header{
-font-size: var(--fz-40px);
-}
-.l-faq-list li{
-    flex-shrink: 0;
-}
+
+    .l-faq-header {
+        font-size: var(--fz-40px);
+    }
+
+    .l-faq-list li {
+        flex-shrink: 0;
+    }
 }
 
 /* プライバシーポリシー
 ----------------------------------------- */
-section{
+section {
     max-width: 960px;
     margin: 0 auto;
 }
+
 .l-privacy-header {
     font-size: clamp(2.5rem, 2.324rem + 0.751vw, 3rem);
     margin: 0 auto;
@@ -523,9 +645,11 @@ section{
     margin: 0 auto;
     background-color: var(--color-super-white);
 }
-.c-privacy{
+
+.c-privacy {
     padding-block-end: 50px;
 }
+
 .c-privacy-content {
     color: var(--color-gray);
     width: 79%;
@@ -533,17 +657,20 @@ section{
     line-height: 1.6;
     padding-block-start: 50px;
 }
-.c-privacy-title{
+
+.c-privacy-title {
     font-size: var(--fz-20px);
     font-weight: bold;
     list-style: style;
 }
-.c-privacy-desc{
+
+.c-privacy-desc {
     font-weight: normal;
     padding-block-start: 10px;
 }
-@media screen and (max-width: 768px){
-    .l-privacy-header{
+
+@media screen and (max-width: 768px) {
+    .l-privacy-header {
         width: 70%;
     }
 }
