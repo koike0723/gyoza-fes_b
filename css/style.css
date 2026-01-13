@@ -128,7 +128,6 @@ body {
 
 .c-top-btn {
     background: var(--color-yellow);
-    color: var(--color-gray);
     width: 60px;
     height: 60px;
     display: flex;
@@ -142,12 +141,12 @@ body {
     content: url(../img/arrow.png);
 }
 
-/* .c-top-btn a {
+.c-top-back {
     color: var(--color-black);
     font-size: var(--fz-12px);
     font-weight: bold;
     text-transform: uppercase;
-} */
+}
 
 .l-footer-inner {
     background: var(--color-super-white);
