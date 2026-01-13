@@ -29,7 +29,7 @@ body {
     color: var(--color-white);
     line-height: 1.6;
 }
-
+ 
 .l-wrraper {
     width: min(960px, 92vw);
     margin: auto;
@@ -230,6 +230,16 @@ body {
 }
 
 
+/* -------ボタン------- */
+.c-btn{
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: var(--fz-16px);
+    padding-inline: 48px;
+    padding-block: 16px;
+}
+
 /* トップページ
 ----------------------------------------- */
 
@@ -356,3 +366,132 @@ section{
 
 /* お問合せ
 ------------------------------------------ */
+
+/* ------レイアウト------- */
+.l-contact-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.l-contact-heading +*{
+    margin-block-start: 30px;
+    margin-block-end: 100px;
+}
+
+.l-contact-form{
+    display: grid;
+    gap: 24px;
+}
+
+.l-contact-agree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+/* -------------------------- */
+
+/* -----------システム関係---- */
+
+.c-contact-type{
+    display: flex;
+    flex-direction: column;
+}
+
+/* アイコンを追加 */
+.c-contact-type__title {
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.c-contact-type__title::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    /* ↓後で画像変える */
+    background: url(./../img/icon_gyoza02.png) no-repeat center/cover;
+    flex-shrink: 0;
+    white-space: nowrap;
+
+}
+
+/* 必須項目を付ける */
+.c-contact-type:has(:required) .c-contact-type__title::after {
+    content: "※必須";
+    font-size: 16px;
+    color: #FF7D60;
+    padding-inline-start: 4px;
+
+}
+
+/* 入力フォーム */
+.c-contact-type__content {
+    color: black;
+}
+
+.c-contact-type__content >*{
+    background-color: white;
+    width: 100%;
+}
+
+/* お問い合わせ種別 */
+.c-contact-type__content--select >*{
+    width: 267px;
+}
+
+/* お問い合わせ内容入力欄 */
+.c-contact-type__content--long >*{
+    height: 158px;
+
+}
+
+
+/* プライバシーポリシー同意欄 */
+.c-contact-agree input[type="checkbox"] {
+    appearance: auto;
+    -webkit-appearance: auto;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.c-contact-agree{
+    width: clamp(21.563rem, 17.447rem + 17.559vw, 33.25rem);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ---------------------- */
+
+/* -------pc版----------- */
+
+@media screen and (min-width: 768px) {
+    .c-contact-type{
+        flex-direction: row ;
+        align-items: start;
+    }
+    .c-contact-type__title{
+        width: 240px;
+    }
+
+    .c-contact-type__title + *{
+        margin-inline-start: 8px;
+    }
+
+    .c-contact-type__content{
+        flex-grow: 1;
+    }
+
+
+}
