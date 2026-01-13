@@ -220,7 +220,7 @@ body {
     padding-block-start: 100px;
 } */
 .l-news-time{
-    padding-top: 50px;
+    padding-block-start: 50px;
 }
 time {
     font-size: var(--fz-12px);
