@@ -380,6 +380,7 @@ h2 {
     flex-direction: column;
     align-items: start;
     gap: 20px;
+    margin-right: auto;
 }
 
 .c-shop-introduction__description__name {
@@ -423,7 +424,7 @@ h2 {
 }
 
 .c-product-introduction__img>* {
-    width: clamp(21.563rem, 18.812rem + 11.737vw, 29.375rem);
+    width: clamp(345px, 18.812rem + 11.737vw, 470px);
 }
 
 .c-product-introduction__img+* {
