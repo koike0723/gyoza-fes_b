@@ -341,6 +341,7 @@ body {
     font-size: clamp(var(--fz-40px), 37.183px + 0.751vw, var(--fz-48px));
     color: var(--color-yellow);
     font-weight: bold;
+    text-align: center;
 }
 
 /* 店舗リスト */
@@ -361,7 +362,6 @@ body {
 
 .c-section-title--shop-list {
     color: var(--color-black);
-    text-align: center;
 }
 
 .l-scroll-list {
@@ -416,6 +416,59 @@ body {
 }
 
 /* 開催概要 */
+
+.c-section--event-info {
+    background: url(../img/bg_event_info.png) no-repeat center / cover;
+}
+
+.l-event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.c-event-info__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--color-black);
+    padding-block: clamp(10px, 6.479px + 0.939vw, 20px);
+    padding-inline: clamp(10px, -21.690px + 8.451vw, 100px);
+}
+
+.c-event-info__item {
+    display: flex;
+}
+
+.c-event-info__item::before {
+    content: url(../img/icon_gyoza.png);
+    padding-inline-end: 5px;
+}
+
+.c-event-info__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-event-info__text dt {
+    font-weight: normal;
+}
+
+.c-event-info__text dd span {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .c-event-info__text {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .c-event-info__text dt{
+        width: 80px;
+    }
+}
 
 /* アクセス */
 
@@ -515,10 +568,6 @@ iframe {
 
 /* プライバシーポリシー
 ----------------------------------------- */
-section {
-    max-width: 960px;
-    margin: 0 auto;
-}
 
 .l-privacy-header {
     font-size: clamp(2.5rem, 2.324rem + 0.751vw, 3rem);
