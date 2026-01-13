@@ -238,7 +238,7 @@ body {
 
 /* 店舗詳細
 ----------------------------------------- */
-section+*{
+.l-section__shop-detail+*{
     margin-block-start: 30px;
 }
 
