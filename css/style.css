@@ -341,6 +341,10 @@ iframe {
 
 /* メインコンテンツ */
 
+.c-section{
+    padding-block: clamp(50px, 32.394px + 4.695vw, 100px);
+}
+
 .c-section-title{
     font-size: clamp(var(--fz-40px), 37.183px + 0.751vw, var(--fz-48px));
     color: var(--color-yellow);
