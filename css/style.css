@@ -25,6 +25,7 @@
 
 body {
     background: var(--color-gray);
+
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: var(--fz-16px);
     color: var(--color-white);
@@ -115,7 +116,7 @@ body {
 
     .c-header-nav__hamburger {
         display: none;
-        ;
+
     }
 }
 
@@ -142,7 +143,7 @@ body {
     content: url(../img/arrow.png);
 }
 
-.c-top-btn a {
+.c-top-back {
     color: var(--color-black);
     font-size: var(--fz-12px);
     font-weight: bold;
@@ -230,6 +231,15 @@ body {
     }
 }
 
+/* -------ボタン------- */
+.c-btn {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: var(--fz-16px);
+    padding-inline: 48px;
+    padding-block: 16px;
+}
 
 /* トップページ
 ----------------------------------------- */
@@ -489,15 +499,357 @@ body {
 
 
 /* お知らせ */
+#news h2 {
+    font-size: var(--fz-40px);
+    font-weight: bold;
+    color: var(--color-yellow);
+    margin-bottom: 30px;
+}
+
+#news div {
+    background: var(--color-super-white);
+}
+
+#news dl {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#news dl::-webkit-scrollbar {
+    width: 20px;
+}
+
+#news dl::-webkit-scrollbar-thumb {
+    background: var(--color-super-white);
+    border-radius: 15px;
+    border: 30px solid var(--color-super-white);
+}
+
+#news dl::-webkit-scrollbar-track {
+    background: var(--color-gray);
+}
+
+.c-news__item {
+    text-align: left;
+    width: 260px;
+    margin: 35px 15px;
+    color: var(--color-black);
+    font-size: var(--fz-16px);
+}
+
+.c-news__item dd {
+    border-bottom: 2px solid var(--color-red);
+}
+
 
 /* 店舗リスト
 ----------------------------------------- */
+main {
+    width: 92%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--color-white);
+    font-size: var(--fz-48px);
+    font-weight: bold;
+    text-align: center;
+    margin-block-end: 30px;
+}
+
+.c-shop-card {
+    background: var(--color-darkgray);
+    box-shadow: 20px 20px 0 0 var(--color-red);
+    display: flex;
+    gap: 30px;
+    margin-block-end: 80px;
+}
+
+.c-shop-card img {
+    height: 345px;
+    width: 345px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.c-shop-card_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 10px 10px 0;
+    width: 100%;
+    font-size: var(--fz-24px);
+}
+
+.c-shop-card_detailtext {
+    color: var(--color-white);
+}
+
+.c-shop-card__shopname {
+    font-weight: bold;
+    text-decoration: underline 1.5px;
+    text-decoration-color: var(--color-red);
+    text-underline-offset: 0.3em;
+}
+
+.c-shop-card_detailgyoza {
+    margin-block-start: 28px;
+    line-height: 2;
+}
+
+.c-shop-card a {
+    font-weight: bold;
+    text-align: center;
+    background: var(--color-yellow);
+    color: var(--color-black);
+    width: 100%;
+    display: block;
+    padding: 20px 50px;
+}
+
+.sp_br {
+    display: none;
+}
+
+@media screen and (max-width: 376px) {
+
+    .c-shop-card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 0 0 var(--color-red);
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .c-shop-card img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .c-shop-card_detail {
+        text-align: center;
+        font-size: var(--fz-20px);
+        margin: 0;
+    }
+
+    .c-shop-card_detailgyoza {
+        margin-block-start: 25px;
+        line-height: 1.5;
+    }
+
+    .c-shop-card a {
+        margin-block-start: 20px;
+    }
+
+    .sp_br {
+        display: block;
+    }
+}
 
 /* 店舗詳細
 ----------------------------------------- */
+.l-section__shop-detail+* {
+    margin-block-start: 30px;
+}
+
+.c-section-title {
+    font-size: var(--fz-40px);
+    font-weight: bold;
+}
+
+.c-section-title+* {
+    margin-block-start: 30px;
+}
+
+.c-shop-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+
+.c-shop-introduction+* {
+    margin-block-start: 30px;
+}
+
+.c-shop-introduction__description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.c-shop-introduction__description__name {
+    font-size: var(--fz-24px);
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-red);
+}
+
+.c-shop-introduction__address {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-shop-introduction__address__phone-number,
+.c-shop-introduction__address__email-address {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.c-shop-introduction__address__phone-number::before {
+    content: "";
+    display: block;
+    background: url(./../img/phone-icon.png) no-repeat center center/cover;
+    width: 24px;
+    height: 24px;
+}
+
+.c-shop-introduction__address__email-address::before {
+    content: "";
+    display: inline-block;
+    background: url(./../img/mail-icon.png) no-repeat center center/cover;
+    width: 24px;
+    height: 24px;
+}
+
+/* ----商品紹介----- */
+.c-product-introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-product-introduction__img>* {
+    width: clamp(21.563rem, 18.812rem + 11.737vw, 29.375rem);
+}
+
+.c-product-introduction__img+* {
+    margin-block-end: 30px;
+}
+
+.c-product-introduction__description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: clamp(21.563rem, 18.812rem + 11.737vw, 29.375rem);
+}
+
+.c-product-introduction__description__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.c-product-introduction__description__detail>* {
+    font-size: var(--fz-24px);
+    font-weight: bold;
+}
+
+.c-btn--sop-detail {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .c-product-introduction {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
 
 /* お知らせ詳細
 ----------------------------------------- */
+/* article {
+    width: 960px;
+    margin: 0 auto;
+    padding-block-start: 100px;
+} */
+.l-news-time {
+    padding-block-start: 50px;
+}
+
+time {
+    font-size: var(--fz-12px);
+}
+
+.c-news__title {
+    font-size: var(--fz-24px);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    padding-block-end: 50px;
+}
+
+/* .l-news-inner {
+    max-width: 80%;
+    padding: clamp(0.938rem, -0.933rem + 7.981vw, 6.25rem);
+    margin: 0 auto;
+} */
+
+.c-news__titledetail {
+    padding-block-end: 30px;
+}
+
+.l-news-img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.gyoza-img {
+    width: clamp(21.563rem, 12.430rem + 38.967vw, 47.5rem);
+    height: 400px;
+    object-fit: cover;
+}
+
+.c-news__text {
+    padding-block: 50px;
+}
+
+.c-news__subtitle {
+    font-size: var(--fz-16px);
+    font-weight: bold;
+}
+
+.l-news-cat {
+    padding-block: 50px;
+}
+
+.l-news-btn {
+    background-color: var(--color-yellow);
+    width: 152px;
+    height: 66px;
+    padding-inline: 2em;
+    padding-block: 1.2em;
+    margin: 0 auto;
+}
+
+.l-news-btn a {
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+.social-text {
+    font-size: var(--fz-14px);
+    padding-block-end: 5px;
+}
+
+.social-list {
+    display: flex;
+    gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .l-news-img {
+        width: clamp(21.563rem, 8.119rem + 57.36vw, 35.688rem);
+    }
+}
 
 /* よくある質問
 ----------------------------------------- */
@@ -516,7 +868,7 @@ body {
 .l-faq-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-block-end: 30px;
 }
 
 .l-faq-list li {
@@ -532,8 +884,9 @@ body {
     margin: 0 auto;
 }
 
+
 .l-faq {
-    padding-bottom: 60px;
+    padding-block-end: 60px;
 }
 
 .l-faq-about {
@@ -541,7 +894,7 @@ body {
     font-weight: bold;
     color: var(--color-black);
     text-align: center;
-    padding-top: 1em;
+    padding-block-start: 1em;
     margin: 0 auto;
 }
 
@@ -605,7 +958,7 @@ body {
     width: 79%;
     margin: 0 auto;
     line-height: 1.6;
-    padding-top: 50px;
+    padding-block-start: 50px;
 }
 
 .c-privacy-title {
@@ -628,3 +981,134 @@ body {
 
 /* お問合せ
 ------------------------------------------ */
+
+/* ------レイアウト------- */
+.l-contact-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.l-contact-heading+* {
+    margin-block-start: 30px;
+    margin-block-end: 100px;
+}
+
+.l-contact-form {
+    display: grid;
+    gap: 24px;
+}
+
+.l-contact-agree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+/* -------------------------- */
+
+/* -----------システム関係---- */
+
+.c-contact-type {
+    display: flex;
+    flex-direction: column;
+}
+
+/* アイコンを追加 */
+.c-contact-type__title {
+    font-size: var(--fz-16px);
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.c-contact-type__title::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    /* ↓後で画像変える */
+    background: url(./../img/icon_gyoza02.png) no-repeat center/cover;
+    flex-shrink: 0;
+    white-space: nowrap;
+
+}
+
+/* 必須項目を付ける */
+.c-contact-type:has(:required) .c-contact-type__title::after {
+    content: "※必須";
+    font-size: var(--fz-16px);
+    color: var(--color-salmon);
+    padding-inline-start: 4px;
+
+}
+
+/* 入力フォーム */
+.c-contact-type__content {
+    color: var(--color-black);
+}
+
+.c-contact-type__content>* {
+    background-color: var(--color-white);
+    width: 100%;
+}
+
+/* お問い合わせ種別 */
+.c-contact-type__content--select>* {
+    width: 267px;
+}
+
+/* お問い合わせ内容入力欄 */
+.c-contact-type__content--long>* {
+    height: 158px;
+
+}
+
+
+/* プライバシーポリシー同意欄 */
+.c-contact-agree input[type="checkbox"] {
+    appearance: auto;
+    -webkit-appearance: auto;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.c-contact-agree {
+    width: clamp(21.563rem, 17.447rem + 17.559vw, 33.25rem);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ---------------------- */
+
+/* -------pc版----------- */
+
+@media screen and (min-width: 768px) {
+    .c-contact-type {
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .c-contact-type__title {
+        width: 240px;
+    }
+
+    .c-contact-type__title+* {
+        margin-inline-start: 8px;
+    }
+
+    .c-contact-type__content {
+        flex-grow: 1;
+    }
+
+
+}
