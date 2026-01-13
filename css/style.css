@@ -360,7 +360,7 @@ body {
     gap: 30px;
 }
 
-.c-section-title--shop-list {
+.c-section-title--black {
     color: var(--color-black);
 }
 
@@ -472,9 +472,21 @@ body {
 
 /* アクセス */
 
-iframe {
-    width: 100%;
+.c-section--access{
+    background: var(--color-super-white);
 }
+
+.c-google-map iframe{
+    width: 100%;
+    height: 300px;
+}
+
+.l-access{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 
 /* お知らせ */
 
