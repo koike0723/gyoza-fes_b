@@ -24,6 +24,7 @@
 
 body {
     background: var(--color-gray);
+
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: var(--fz-16px);
     color: var(--color-white);
@@ -114,7 +115,7 @@ body {
 
     .c-header-nav__hamburger {
         display: none;
-        ;
+        
     }
 }
 
@@ -229,7 +230,6 @@ body {
     }
 }
 
-
 /* -------ボタン------- */
 .c-btn{
     background-color: var(--color-yellow);
@@ -245,6 +245,109 @@ body {
 
 /* 店舗リスト
 ----------------------------------------- */
+main {
+    width: 92%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: var(--color-white);
+    font-size: var(--fz-48px);
+    font-weight: bold;
+    text-align: center;
+    margin-block-end: 30px;
+}
+
+.c-shop-card {
+    background: var(--color-darkgray);
+    box-shadow: 20px 20px 0 0 var(--color-red);
+    display: flex;
+    gap: 30px;
+    margin-block-end: 80px;
+}
+
+.c-shop-card img {
+    height: 345px;
+    width: 345px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.c-shop-card_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 10px 10px 0;
+    width: 100%;
+    font-size: var(--fz-24px);
+}
+
+.c-shop-card_detailtext {
+    color: var(--color-white);
+}
+
+.c-shop-card__shopname {
+    font-weight: bold;
+    text-decoration: underline 1.5px;
+    text-decoration-color: var(--color-red);
+    text-underline-offset: 0.3em;
+}
+
+.c-shop-card_detailgyoza {
+    margin-block-start: 28px;
+    line-height: 2;
+}
+
+.c-shop-card a {
+    font-weight: bold;
+    text-align: center;
+    background: var(--color-yellow);
+    color: var(--color-black);
+    width: 100%;
+    display: block;
+    padding: 20px 50px;
+}
+
+.sp_br {
+    display: none;
+}
+
+@media screen and (max-width: 376px) {
+
+    .c-shop-card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 5px 0 0 var(--color-red);
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .c-shop-card img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .c-shop-card_detail {
+        text-align: center;
+        font-size: var(--fz-20px);
+        margin: 0;
+    }
+
+    .c-shop-card_detailgyoza {
+        margin-block-start: 25px;
+        line-height: 1.5;
+    }
+
+    .c-shop-card a {
+        margin-block-start: 20px;
+    }
+
+    .sp_br {
+        display: block;
+    }
+}
 
 /* 店舗詳細
 ----------------------------------------- */
@@ -267,7 +370,7 @@ body {
 .l-faq-list{
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-block-end: 30px;
 }
 .l-faq-list li{
     font-size: var(--fz-16px);
@@ -281,14 +384,14 @@ body {
     margin: 0 auto;
 }
 .l-faq{
-    padding-bottom: 60px;
+    padding-block-end: 60px;
 }
 .l-faq-about{
     font-size: var(--fz-16px);
     font-weight: bold;
     color: var(--color-black);
     text-align: center;
-    padding-top: 1em;
+    padding-block-start: 1em;
     margin: 0 auto;
 }
 .c-faq-content{
@@ -346,7 +449,7 @@ section{
     width: 79%;
     margin: 0 auto;
     line-height: 1.6;
-    padding-top: 50px;
+    padding-block-start: 50px;
 }
 .c-privacy-title{
     font-size: var(--fz-20px);
@@ -402,7 +505,7 @@ section{
 
 /* アイコンを追加 */
 .c-contact-type__title {
-    font-size: 16px;
+    font-size: var(--fz-16px);
     font-weight: normal;
     display: flex;
     align-items: center;
@@ -425,19 +528,19 @@ section{
 /* 必須項目を付ける */
 .c-contact-type:has(:required) .c-contact-type__title::after {
     content: "※必須";
-    font-size: 16px;
-    color: #FF7D60;
+    font-size: var(--fz-16px);
+    color: var(--color-salmon);
     padding-inline-start: 4px;
 
 }
 
 /* 入力フォーム */
 .c-contact-type__content {
-    color: black;
+    color: var(--color-black);
 }
 
 .c-contact-type__content >*{
-    background-color: white;
+    background-color: var(--color-white);
     width: 100%;
 }
 
