@@ -326,26 +326,18 @@ body {
         text-align-last: center;
     }
 
-    .sp-only{
+    .sp-only {
         display: none;
     }
 }
 
-.c-shop-card img {
-    width: 100%;
-}
-
-iframe {
-    width: 100%;
-}
-
 /* メインコンテンツ */
 
-.c-section{
+.c-section {
     padding-block: clamp(50px, 32.394px + 4.695vw, 100px);
 }
 
-.c-section-title{
+.c-section-title {
     font-size: clamp(var(--fz-40px), 37.183px + 0.751vw, var(--fz-48px));
     color: var(--color-yellow);
     font-weight: bold;
@@ -353,9 +345,83 @@ iframe {
 
 /* 店舗リスト */
 
+.c-section--shop-list {
+    padding-block-start: 0;
+}
+
+.l-shop-list-section {
+    background: var(--color-yellow);
+    box-shadow: clamp(5px, -0.282px + 1.408vw, 20px) clamp(5px, -0.282px + 1.408vw, 20px) var(--color-red);
+    color: var(--color-black);
+    padding-block: clamp(50px, 32.394px + 4.695vw, 100px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.c-section-title--shop-list {
+    color: var(--color-black);
+    text-align: center;
+}
+
+.l-scroll-list {
+    display: flex;
+    align-items: center;
+    padding-inline: clamp(10px, 6.479px + 0.939vw, 20px);
+}
+
+.c-scroll-btn {
+    width: 40px;
+    flex-shrink: 0;
+}
+
+.c-scroll-btn:last-of-type {
+    transform: rotate(180deg);
+}
+
+.c-shop-card__list {
+    display: flex;
+    gap: 20px;
+    padding-inline: clamp(0px, -7.042px + 1.878vw, 20px);
+}
+
+.c-shop-card__item {
+    background-color: var(--color-super-white);
+    flex-shrink: 1;
+}
+
+.c-shop-card__item:not(:first-of-type) {
+    display: none;
+}
+
+.c-shop-card__item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.c-shop-card__name {
+    padding-block: 10px;
+    padding-inline: 10px;
+}
+
+.c-btn--shop-list {
+    background-color: var(--color-black);
+    color: var(--color-super-white);
+}
+
+@media screen and (min-width: 768px) {
+    .c-shop-card__item:not(:first-of-type) {
+        display: block;
+    }
+}
+
 /* 開催概要 */
 
 /* アクセス */
+
+iframe {
+    width: 100%;
+}
 
 /* お知らせ */
 
