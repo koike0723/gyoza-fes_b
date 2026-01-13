@@ -23,7 +23,7 @@
 
 <body>
     <header class="l-header l-header--sub-page">
-       <div id="top" class="c-top">
+        <div id="top" class="c-top">
             <div class="l-wrraper c-top__contents">
                 <h1 class="c-logo">
                     <img class="c-logo--pc" src="./img/logo_02.svg" alt="ふくおか餃子FES">
@@ -60,107 +60,111 @@
 
     <main>
 
-        <section>
-            <h1 class="c-section-title">お問い合わせ</h1>
-            <p>
-                当イベントへのお問い合わせは、下記のフォームよりお願い致します。
-            </p>
-        </section>
-
-        <form action="#" method="post">
-            <dl class="l-contact">
-                <div class="c-contact-type">
-                    <dt>
-                        <label for="inquiry-type">お問い合わせ種別</label>
-                    </dt>
-                    <dd>
-                        <select name="inquiry-type" id="inquiry-type" required>
-                            <option value="FESに関すること">FESに関すること</option>
-                            <option value="店舗に関すること">店舗に関すること</option>
-                            <option value="会場に関すること">会場に関すること</option>
-                            <option value="その他お問合せ">その他お問合せ</option>
-                        </select>
-                    </dd>
-                </div>
-                <div class="c-contact-type">
-                    <dt>
-                        <label for="user-name">お名前</label>
-                    </dt>
-                    <dd>
-                        <input type="text" id="user-name" name="user-name" required>
-                    </dd>
-                </div>
-                <div class="c-contact-type">
-                    <dt>
-                        <label for="user-name-furigana">ふりがな</label>
-                    </dt>
-                    <dd>
-                        <input type="text" id="user-name-furigana" name="user-name-furigana" required>
-                    </dd>
-                </div>
-                <div class="c-contact-type">
-                    <dt>
-                        <label for="company-name">会社名</label>
-                    </dt>
-                    <dd>
-                        <input type="text" id="company-name" name="company-name">
-                    </dd>
-                </div>
-                <div class="c-contact-type">
-                    <dt>
-                        <label for="telephone-number">電話番号</label>
-                    </dt>
-                    <dd>
-                        <input type="tel" id="telephone-number" name="telephone-number">
-                    </dd>
-                </div>
-                <div class="c-contact-type">
-                    <dt>
-                        <label for="user-email-address">メールアドレス</label>
-                    </dt>
-                    <dd>
-                        <input type="email" id="user-email-address" name="user-email-address" required>
-                    </dd>
-                </div>
-                <div class="c-contact-type">
-                    <dt>
-                        <label for="store-name">店名・媒体名</label>
-                    </dt>
-                    <dd>
-                        <input type="text" id="store-name" name="store-name">
-                    </dd>
-                </div>
-                <div class="c-contact-type">
-                    <dt>
-                        <label for="inquiry-details">お問い合わせ内容</label>
-                    </dt>
-                    <dd>
-                        <textarea name="inquiry-details" id="inquiry-details" required></textarea>
-                    </dd>
-                </div>
-            </dl>
-        </form>
-
-        <div>
-            <div>
+        <div class="l-wrraper">
+            <section class="l-contact-heading">
+                <h1 class="c-section-title">お問い合わせ</h1>
                 <p>
-                    当イベントの
-                    <a href="./privacy.html">プライバシーポリシー</a>
-                    に同意頂ける場合は「同意する」にチェックを付け「入力内容の確認」ボタンをクリックしてください
+                    当イベントへのお問い合わせは、下記のフォームよりお願い致します。
                 </p>
-                <p>
-                    <label for="approve"><input type="radio" id="approve" name="approve" value="承認する">承認する</label>
+            </section>
+            <form action="#" method="post">
+                <dl class="l-contact-form">
+                    <div class="c-contact-type">
+                        <dt class="c-contact-type__title">
+                            <label for="inquiry-type">お問い合わせ種別</label>
+                        </dt>
+                        <dd class="c-contact-type__content c-contact-type__content--select">
+                            <select name="inquiry-type" id="inquiry-type" required>
+                                <option value="FESに関すること">FESに関すること</option>
+                                <option value="店舗に関すること">店舗に関すること</option>
+                                <option value="会場に関すること">会場に関すること</option>
+                                <option value="その他お問合せ">その他お問合せ</option>
+                            </select>
+                        </dd>
+                    </div>
+                    <div class="c-contact-type">
+                        <dt class="c-contact-type__title">
+                            <label for="user-name">お名前</label>
+                        </dt>
+                        <dd class="c-contact-type__content">
+                            <input type="text" id="user-name" name="user-name" required>
+                        </dd>
+                    </div>
+                    <div class="c-contact-type">
+                        <dt class="c-contact-type__title">
+                            <label for="user-name-furigana">ふりがな</label>
+                        </dt>
+                        <dd class="c-contact-type__content">
+                            <input type="text" id="user-name-furigana" name="user-name-furigana" required>
+                        </dd>
+                    </div>
+                    <div class="c-contact-type">
+                        <dt class="c-contact-type__title">
+                            <label for="company-name">会社名</label>
+                        </dt>
+                        <dd class="c-contact-type__content">
+                            <input type="text" id="company-name" name="company-name">
+                        </dd>
+                    </div>
+                    <div class="c-contact-type">
+                        <dt class="c-contact-type__title">
+                            <label for="telephone-number">電話番号</label>
+                        </dt>
+                        <dd class="c-contact-type__content">
+                            <input type="tel" id="telephone-number" name="telephone-number">
+                        </dd>
+                    </div>
+                    <div class="c-contact-type">
+                        <dt class="c-contact-type__title">
+                            <label for="user-email-address">メールアドレス</label>
+                        </dt>
+                        <dd class="c-contact-type__content">
+                            <input type="email" id="user-email-address" name="user-email-address" required>
+                        </dd>
+                    </div>
+                    <div class="c-contact-type">
+                        <dt class="c-contact-type__title">
+                            <label for="store-name">店名・媒体名</label>
+                        </dt>
+                        <dd class="c-contact-type__content">
+                            <input type="text" id="store-name" name="store-name">
+                        </dd>
+                    </div>
+                    <div class="c-contact-type">
+                        <dt class="c-contact-type__title">
+                            <label for="inquiry-details">お問い合わせ内容</label>
+                        </dt>
+                        <dd class="c-contact-type__content c-contact-type__content--long">
+                            <textarea name="inquiry-details" id="inquiry-details" required></textarea>
+                        </dd>
+                    </div>
+                </dl>
+            </form>
+            <div class="l-contact-agree">
+                <div class="c-contact-agree">
+                    <p class="c-contact-agree__text">
+                        当イベントの
+                        <a href="./privacy.html">プライバシーポリシー</a>
+                        に同意頂ける場合は「同意する」にチェックを付け「入力内容の確認」ボタンをクリックしてください
+                    </p> 
+                    <p class="c-contact-agree__item">
+                        <input type="checkbox" id="agree" name="agree" value="同意する"><label for="agree">同意する</label>
+                    </p>
+                </div>
+                <p class="c-btn">
+                    <input type="submit" value="送信する">
                 </p>
             </div>
-            <p>
-                <input type="submit" value="送信する">
-            </p>
         </div>
     </main>
 
     <footer class="l-footer">
         <div class="l-wrraper">
-            <a href="#top" class="c-top-btn">top</a>
+            <div class="l-btn-area">
+                <div class="c-top-btn">
+                    <a href="#top">top</a>
+                </div>
+            </div>
         </div>
         <div class="l-footer-inner">
             <div class="l-wrraper l-footer-contets">

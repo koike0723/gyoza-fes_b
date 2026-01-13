@@ -2,8 +2,6 @@
 
 /* 全体
 ----------------------------------------- */
-
-
 :root {
     --color-black: #131A12;
     --color-white: #FFF7F7;
@@ -32,7 +30,7 @@ body {
     color: var(--color-white);
     line-height: 1.6;
 }
-
+ 
 .l-wrraper {
     width: min(960px, 92vw);
     margin: auto;
@@ -124,6 +122,33 @@ body {
 /* フッター
 ----------------------------------------- */
 
+.l-btn-area{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.c-top-btn {
+    background: var(--color-yellow);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.c-top-btn::before {
+    content: url(../img/arrow.png);
+}
+
+.c-top-btn a {
+    color: var(--color-black);
+    font-size: var(--fz-12px);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .l-footer-inner {
     background: var(--color-super-white);
     padding-block: 50px;
@@ -205,7 +230,15 @@ body {
     }
 }
 
-.l-header {}
+/* -------ボタン------- */
+.c-btn{
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: var(--fz-16px);
+    padding-inline: 48px;
+    padding-block: 16px;
+}
 
 /* トップページ
 ----------------------------------------- */
@@ -324,9 +357,244 @@ h2 {
 
 /* よくある質問
 ----------------------------------------- */
+.l-faq-inner{
+    max-width: 760px;
+    margin: 0 auto;
+}
+.l-faq-header{
+    font-size: var(--fz-48px);
+    color: var(--color-white);
+    font-weight: bold;
+    text-align: center;
+}
+.l-faq-list{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.l-faq-list li{
+    font-size: var(--fz-16px);
+    margin: 30px;
+    text-decoration: underline;
+}
+.l-faq-bg{
+    background-color: var(--color-yellow);
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+}
+.l-faq{
+    padding-bottom: 60px;
+}
+.l-faq-about{
+    font-size: var(--fz-16px);
+    font-weight: bold;
+    color: var(--color-black);
+    text-align: center;
+    padding-top: 1em;
+    margin: 0 auto;
+}
+.c-faq-content{
+    padding-block-start: 30px;
+}
+.c-faq-question{
+    font-size: var(--fz-16px);
+    font-weight: bold;
+    padding-block-end: 10px;
+}
+.c-faq-answer{
+    font-size: var(--fz-16px);
+}
+.c-faq-answer a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px){
+    .l-faq-inner{
+        max-width: 92%;
+    }
+.l-faq-header{
+font-size: var(--fz-40px);
+}
+.l-faq-list li{
+    flex-shrink: 0;
+}
+}
 
 /* プライバシーポリシー
 ----------------------------------------- */
+section{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.l-privacy-header {
+    font-size: clamp(2.5rem, 2.324rem + 0.751vw, 3rem);
+    margin: 0 auto;
+    font-weight: bold;
+    color: var(--color-white);
+    text-align: center;
+    padding-block-end: 50px;
+}
+
+.l-privacy-inner {
+    width: clamp(21.563rem, 8.028rem + 57.746vw, 60rem);
+    margin: 0 auto;
+    background-color: var(--color-super-white);
+}
+.c-privacy{
+    padding-block-end: 50px;
+}
+.c-privacy-content {
+    color: var(--color-gray);
+    width: 79%;
+    margin: 0 auto;
+    line-height: 1.6;
+    padding-top: 50px;
+}
+.c-privacy-title{
+    font-size: var(--fz-20px);
+    font-weight: bold;
+    list-style: style;
+}
+.c-privacy-desc{
+    font-weight: normal;
+    padding-block-start: 10px;
+}
+@media screen and (max-width: 768px){
+    .l-privacy-header{
+        width: 70%;
+    }
+}
+
 
 /* お問合せ
 ------------------------------------------ */
+
+/* ------レイアウト------- */
+.l-contact-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.l-contact-heading +*{
+    margin-block-start: 30px;
+    margin-block-end: 100px;
+}
+
+.l-contact-form{
+    display: grid;
+    gap: 24px;
+}
+
+.l-contact-agree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+/* -------------------------- */
+
+/* -----------システム関係---- */
+
+.c-contact-type{
+    display: flex;
+    flex-direction: column;
+}
+
+/* アイコンを追加 */
+.c-contact-type__title {
+    font-size: 16px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.c-contact-type__title::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    /* ↓後で画像変える */
+    background: url(./../img/icon_gyoza02.png) no-repeat center/cover;
+    flex-shrink: 0;
+    white-space: nowrap;
+
+}
+
+/* 必須項目を付ける */
+.c-contact-type:has(:required) .c-contact-type__title::after {
+    content: "※必須";
+    font-size: 16px;
+    color: #FF7D60;
+    padding-inline-start: 4px;
+
+}
+
+/* 入力フォーム */
+.c-contact-type__content {
+    color: black;
+}
+
+.c-contact-type__content >*{
+    background-color: white;
+    width: 100%;
+}
+
+/* お問い合わせ種別 */
+.c-contact-type__content--select >*{
+    width: 267px;
+}
+
+/* お問い合わせ内容入力欄 */
+.c-contact-type__content--long >*{
+    height: 158px;
+
+}
+
+
+/* プライバシーポリシー同意欄 */
+.c-contact-agree input[type="checkbox"] {
+    appearance: auto;
+    -webkit-appearance: auto;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.c-contact-agree{
+    width: clamp(21.563rem, 17.447rem + 17.559vw, 33.25rem);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ---------------------- */
+
+/* -------pc版----------- */
+
+@media screen and (min-width: 768px) {
+    .c-contact-type{
+        flex-direction: row ;
+        align-items: start;
+    }
+    .c-contact-type__title{
+        width: 240px;
+    }
+
+    .c-contact-type__title + *{
+        margin-inline-start: 8px;
+    }
+
+    .c-contact-type__content{
+        flex-grow: 1;
+    }
+
+
+}
