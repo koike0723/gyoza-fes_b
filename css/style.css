@@ -295,19 +295,6 @@ time {
     .l-news-img{
         width: clamp(21.563rem, 8.119rem + 57.36vw, 35.688rem);
     }
-     /* article {
-        width: 92%;
-    } */
-    /*.c-news__title{
-    }
-    .l-news-inner{
-       max-width: 345px;
-    }:
-    */
-    /* .gyoza-img {
-        height: 345px;
-        /* width: clamp(21.563rem, -3.664rem + 107.634vw, 48rem); 
-    }  */
 }
 
 /* よくある質問
