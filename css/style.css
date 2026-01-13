@@ -115,7 +115,7 @@ body {
 
     .c-header-nav__hamburger {
         display: none;
-        ;
+        
     }
 }
 
@@ -256,7 +256,7 @@ h2 {
     font-size: var(--fz-48px);
     font-weight: bold;
     text-align: center;
-    margin-bottom: 30px;
+    margin-block-end: 30px;
 }
 
 .c-shop-card {
@@ -264,7 +264,7 @@ h2 {
     box-shadow: 20px 20px 0 0 var(--color-red);
     display: flex;
     gap: 30px;
-    margin-bottom: 80px;
+    margin-block-end: 80px;
 }
 
 .c-shop-card img {
@@ -295,7 +295,7 @@ h2 {
 }
 
 .c-shop-card_detailgyoza {
-    margin-top: 28px;
+    margin-block-start: 28px;
     line-height: 2;
 }
 
@@ -336,12 +336,12 @@ h2 {
     }
 
     .c-shop-card_detailgyoza {
-        margin-top: 25px;
+        margin-block-start: 25px;
         line-height: 1.5;
     }
 
     .c-shop-card a {
-        margin-top: 20px;
+        margin-block-start: 20px;
     }
 
     .sp_br {
@@ -370,7 +370,7 @@ h2 {
 .l-faq-list{
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-block-end: 30px;
 }
 .l-faq-list li{
     font-size: var(--fz-16px);
@@ -384,14 +384,14 @@ h2 {
     margin: 0 auto;
 }
 .l-faq{
-    padding-bottom: 60px;
+    padding-block-end: 60px;
 }
 .l-faq-about{
     font-size: var(--fz-16px);
     font-weight: bold;
     color: var(--color-black);
     text-align: center;
-    padding-top: 1em;
+    padding-block-start: 1em;
     margin: 0 auto;
 }
 .c-faq-content{
@@ -449,7 +449,7 @@ section{
     width: 79%;
     margin: 0 auto;
     line-height: 1.6;
-    padding-top: 50px;
+    padding-block-start: 50px;
 }
 .c-privacy-title{
     font-size: var(--fz-20px);
@@ -505,7 +505,7 @@ section{
 
 /* アイコンを追加 */
 .c-contact-type__title {
-    font-size: 16px;
+    font-size: var(--fz-16px);
     font-weight: normal;
     display: flex;
     align-items: center;
@@ -528,19 +528,19 @@ section{
 /* 必須項目を付ける */
 .c-contact-type:has(:required) .c-contact-type__title::after {
     content: "※必須";
-    font-size: 16px;
-    color: #FF7D60;
+    font-size: var(--fz-16px);
+    color: var(--color-salmon);
     padding-inline-start: 4px;
 
 }
 
 /* 入力フォーム */
 .c-contact-type__content {
-    color: black;
+    color: var(--color-black);
 }
 
 .c-contact-type__content >*{
-    background-color: white;
+    background-color: var(--color-white);
     width: 100%;
 }
 
