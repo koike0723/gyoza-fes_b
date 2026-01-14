@@ -38,7 +38,7 @@ body {
 }
 
 .l-wrapper-inner {
-    padding-inline: clamp(10px, -21.690px + 8.451vw, 100px);
+    padding-inline: clamp(10px, -47.692px + 15.385vw, 100px);
 }
 
 /* -------ボタン------- */
@@ -930,21 +930,13 @@ body {
 }
 
 .l-privacy-inner {
-    width: clamp(21.563rem, 8.028rem + 57.746vw, 60rem);
-    margin: 0 auto;
     background-color: var(--color-super-white);
 }
 
 .c-privacy {
-    padding-block-end: 50px;
-}
-
-.c-privacy-content {
+    padding-block: 50px;
+    padding-inline-start: 1.5em;
     color: var(--color-gray);
-    width: 79%;
-    margin: 0 auto;
-    line-height: 1.6;
-    padding-block-start: 50px;
 }
 
 .c-privacy-title {
