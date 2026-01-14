@@ -545,19 +545,6 @@ body {
 
 /* 店舗リスト
 ----------------------------------------- */
-/* main {
-    width: 92%;
-    max-width: 1000px;
-    margin: 0 auto;
-} */
-
-/* h2 {
-    color: var(--color-white);
-    font-size: var(--fz-48px);
-    font-weight: bold;
-    text-align: center;
-    margin-block-end: 30px;
-} */
 
 .c-shop-card {
     background: var(--color-darkgray);
