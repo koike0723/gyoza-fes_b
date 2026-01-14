@@ -37,6 +37,10 @@ body {
     margin-inline: auto;
 }
 
+.l-wrapper-inner {
+    padding-inline: clamp(10px, -21.690px + 8.451vw, 100px);
+}
+
 /* -------ボタン------- */
 
 .l-btn-area {
@@ -305,18 +309,19 @@ body {
     padding-block: 100px;
 }
 
-.c-lead-copy__text {
+.l-lead-copy__background {
     background: var(--color-darkgray);
     border: 3px solid var(--color-white);
     border-radius: 8px;
+    padding-block: 100px;
+}
+
+.c-lead-copy__text {
     display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: center;
-    padding-block: 100px;
-    padding-inline: clamp(10px, -21.690px + 8.451vw, 100px);
     font-size: var(--fz-20px);
-
 }
 
 .c-lead-copy__text span:first-of-type {
