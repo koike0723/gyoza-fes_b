@@ -331,7 +331,6 @@ iframe {
 
 .c-news__item {
     text-align: left;
-    width: 260px;
     margin: 35px 15px;
     color: var(--color-black);
     font-size: var(--fz-16px);
@@ -348,7 +347,6 @@ iframe {
     }
 
     .c-news__item {
-        width: 705px;
         margin: 35px 100px;
         border-bottom: 2px solid var(--color-red);
     }
