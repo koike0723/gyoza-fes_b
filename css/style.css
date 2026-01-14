@@ -37,6 +37,23 @@ body {
     margin-inline: auto;
 }
 
+/* -------ボタン------- */
+
+.l-btn-area {
+    display: flex;
+    justify-content: center;
+}
+
+.c-btn {
+    display: inline-block;
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: var(--fz-16px);
+    padding-inline: 48px;
+    padding-block: 16px;
+}
+
 /* ヘッダー
 ----------------------------------------- */
 
@@ -123,8 +140,7 @@ body {
 /* フッター
 ----------------------------------------- */
 
-.l-btn-area {
-    display: flex;
+.l-btn-area--end{
     justify-content: flex-end;
 }
 
@@ -226,16 +242,6 @@ body {
         flex-direction: row;
         justify-content: space-between;
     }
-}
-
-/* -------ボタン------- */
-.c-btn {
-    background-color: var(--color-yellow);
-    color: var(--color-black);
-    font-weight: bold;
-    font-size: var(--fz-16px);
-    padding-inline: 48px;
-    padding-block: 16px;
 }
 
 /* トップページ
@@ -744,11 +750,6 @@ h2 {
     font-weight: bold;
 }
 
-.c-btn--sop-detail {
-    display: flex;
-    justify-content: center;
-}
-
 @media screen and (min-width: 768px) {
     .c-product-introduction {
         flex-direction: row;
@@ -816,20 +817,6 @@ time {
 
 .l-news-cat {
     padding-block: 50px;
-}
-
-.l-news-btn {
-    background-color: var(--color-yellow);
-    width: 152px;
-    height: 66px;
-    padding-inline: 2em;
-    padding-block: 1.2em;
-    margin: 0 auto;
-}
-
-.l-news-btn a {
-    color: var(--color-black);
-    font-weight: bold;
 }
 
 .social-text {
