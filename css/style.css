@@ -852,12 +852,12 @@ time {
 .l-faq-list {
     display: flex;
     justify-content: center;
-    padding-block-end: 30px;
+    padding-block-end: 50px;
+    gap: 30px;
 }
 
 .l-faq-list li {
     font-size: var(--fz-16px);
-    margin: 30px;
     text-decoration: underline;
 }
 
