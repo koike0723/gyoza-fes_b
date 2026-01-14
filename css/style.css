@@ -111,7 +111,7 @@ body {
     }
 
     .c-header-nav__item::before {
-        content: url(../img/icon_gyoza.png);
+        content: url(../img/icon_gyoza.svg);
     }
 
     .c-header-nav__hamburger {
