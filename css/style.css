@@ -924,6 +924,9 @@ body {
     padding-block: 50px;
     padding-inline-start: 1.5em;
     color: var(--color-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .c-privacy-title {
