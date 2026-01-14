@@ -503,7 +503,7 @@ body {
 
 /* お知らせ */
 
-#news div {
+.l-news {
     background: var(--color-super-white);
 }
 
