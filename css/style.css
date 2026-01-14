@@ -324,23 +324,9 @@ iframe {
     background: var(--color-super-white);
 }
 
-#news dl {
+.scroll {
     height: 300px;
     overflow-y: scroll;
-}
-
-#news dl::-webkit-scrollbar {
-    width: 20px;
-}
-
-#news dl::-webkit-scrollbar-thumb {
-    background: var(--color-super-white);
-    border-radius: 15px;
-    border: 30px solid var(--color-super-white);
-}
-
-#news dl::-webkit-scrollbar-track {
-    background: var(--color-gray);
 }
 
 .c-news__item {
@@ -355,6 +341,28 @@ iframe {
     border-bottom: 2px solid var(--color-red);
 }
 
+/* -------pc版-------- */
+@media screen and (min-width: 768px) {
+    .scroll {
+        height: 210px;
+    }
+
+    .c-news__item {
+        width: 705px;
+        margin: 35px 100px;
+        border-bottom: 2px solid var(--color-red);
+    }
+
+    .c-news__item a {
+        display: flex;
+        margin-left: 15px;
+    }
+
+    .c-news__item dd {
+        margin-left: 10px;
+        border-bottom: none;
+    }
+}
 
 /* 店舗リスト
 ----------------------------------------- */
