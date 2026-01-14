@@ -846,10 +846,6 @@ body {
 
 /* よくある質問
 ----------------------------------------- */
-/* .l-faq-inner {
-    max-width: 760px;
-    margin: 0 auto;
-} */
 
 .l-faq-header {
     font-size: var(--fz-48px);
@@ -911,9 +907,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .l-faq-inner {
-        max-width: 92%;
-    }
 
     .l-faq-header {
         font-size: var(--fz-40px);
@@ -972,7 +965,7 @@ body {
 }
 
 
-/* お問合せ
+/* お問い合せ
 ------------------------------------------ */
 
 /* ------レイアウト------- */
@@ -1085,10 +1078,6 @@ body {
 /* -------pc版----------- */
 
 @media screen and (min-width: 768px) {
-    .l-wrapper--inner {
-        max-width: 760px;
-        margin: 0 auto;
-    }
 
     .c-contact-type {
         flex-direction: row;
