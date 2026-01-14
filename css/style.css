@@ -782,7 +782,7 @@ body {
 
 /* お知らせ詳細
 ----------------------------------------- */
-time {
+.c-news-date {
     font-size: var(--fz-12px);
     font-weight: bold;
 }
