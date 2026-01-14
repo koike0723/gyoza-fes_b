@@ -535,7 +535,7 @@ body {
     .scroll {
         height: 210px;
     }
-    
+
     .c-news__item a {
         display: flex;
         margin-left: 15px;
@@ -846,10 +846,10 @@ body {
 
 /* よくある質問
 ----------------------------------------- */
-.l-faq-inner {
+/* .l-faq-inner {
     max-width: 760px;
     margin: 0 auto;
-}
+} */
 
 .l-faq-header {
     font-size: var(--fz-48px);
