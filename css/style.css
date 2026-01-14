@@ -189,6 +189,7 @@ body {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .c-logo--footer {
@@ -217,6 +218,7 @@ body {
 
 .c-footer-nav {
     text-decoration: underline;
+    flex-shrink: 0;
 }
 
 .c-sns {
@@ -832,10 +834,6 @@ body {
 .social-list {
     display: flex;
     gap: 20px;
-}
-
-.social-list img {
-    width: 30px;
 }
 
 @media screen and (max-width: 768px) {
