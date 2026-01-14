@@ -399,6 +399,8 @@ body {
 }
 
 .c-shop-card__item {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-super-white);
     flex-shrink: 1;
 }
@@ -410,6 +412,7 @@ body {
 .c-shop-card__item img {
     width: 100%;
     aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .c-shop-card__name {
@@ -425,6 +428,18 @@ body {
 @media screen and (min-width: 768px) {
     .c-shop-card__item:not(:first-of-type) {
         display: block;
+    }
+
+    .c-shop-card__item {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc((100% - 40px) / 3);
+    }
+
+    .c-shop-card__name {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
     }
 }
 
