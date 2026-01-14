@@ -779,12 +779,6 @@ body {
     margin: 0 auto;
 }
 
-.c-wrapper {
-    width: 760px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
 .c-news__titledetail {
     padding-block-end: 30px;
 }
