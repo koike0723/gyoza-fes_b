@@ -544,19 +544,19 @@ body {
 
 /* 店舗リスト
 ----------------------------------------- */
-main {
+/* main {
     width: 92%;
     max-width: 1000px;
     margin: 0 auto;
-}
+} */
 
-h2 {
+/* h2 {
     color: var(--color-white);
     font-size: var(--fz-48px);
     font-weight: bold;
     text-align: center;
     margin-block-end: 30px;
-}
+} */
 
 .c-shop-card {
     background: var(--color-darkgray);
@@ -567,8 +567,8 @@ h2 {
 }
 
 .c-shop-card img {
-    height: 345px;
     width: 345px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -612,7 +612,7 @@ h2 {
     display: none;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 768px) {
 
     .c-shop-card {
         display: flex;
@@ -623,8 +623,7 @@ h2 {
     }
 
     .c-shop-card img {
-        width: 200px;
-        height: 200px;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -842,7 +841,10 @@ time {
 
 .social-list {
     display: flex;
-    gap: 5px;
+    gap: 20px;
+}
+.social-list img{
+    width: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -869,11 +871,11 @@ time {
     display: flex;
     justify-content: center;
     padding-block-end: 30px;
+    gap: 30px;
 }
 
 .l-faq-list li {
     font-size: var(--fz-16px);
-    margin: 30px;
     text-decoration: underline;
 }
 
