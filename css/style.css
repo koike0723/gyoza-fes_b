@@ -502,12 +502,6 @@ body {
 
 
 /* お知らせ */
-#news h2 {
-    font-size: var(--fz-40px);
-    font-weight: bold;
-    color: var(--color-yellow);
-    margin-bottom: 30px;
-}
 
 #news div {
     background: var(--color-super-white);
@@ -661,11 +655,6 @@ body {
 ----------------------------------------- */
 .l-section__shop-detail+* {
     margin-block-start: 30px;
-}
-
-.c-section-title {
-    font-size: var(--fz-40px);
-    font-weight: bold;
 }
 
 .c-section-title+* {
