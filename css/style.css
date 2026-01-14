@@ -41,6 +41,10 @@ body {
     padding-inline: clamp(10px, -47.692px + 15.385vw, 100px);
 }
 
+.l-main {
+    padding-block: clamp(50px, 32.394px + 4.695vw, 100px);
+}
+
 /* -------ボタン------- */
 
 .l-btn-area {
