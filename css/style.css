@@ -15,6 +15,7 @@
     --fz-64px: 64px;
     --fz-48px: 48px;
     --fz-40px: 40px;
+    --fz-32px: 32px;
     --fz-24px: 24px;
     --fz-20px: 20px;
     --fz-16px: 16px;
@@ -243,6 +244,7 @@ body {
 /* トップページ
 ----------------------------------------- */
 
+/* メインビジュアル */
 .c-mv-area {
     background: url(../img/mv.png) no-repeat center / cover;
     height: 680px;
@@ -295,22 +297,206 @@ body {
     font-weight: bold;
 }
 
-
-.c-shop-card img {
-    width: 100%;
-}
-
-iframe {
-    width: 100%;
-}
-
 /* リードコピー */
+.l-lead-copy {
+    padding-block: 100px;
+}
+
+.c-lead-copy__text {
+    background: var(--color-darkgray);
+    border: 3px solid var(--color-white);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding-block: 100px;
+    padding-inline: clamp(10px, -21.690px + 8.451vw, 100px);
+    font-size: var(--fz-20px);
+
+}
+
+.c-lead-copy__text span:first-of-type {
+    font-size: clamp(var(--fz-32px), 26.366px + 1.502vw, var(--fz-48px));
+    font-weight: bold;
+    text-align: center;
+}
+
+.c-lead-copy__text span:first-of-type span {
+    color: var(--color-salmon);
+}
+
+.c-lead-copy__text span:last-of-type {
+    font-weight: bold;
+    color: var(--color-yellow);
+}
+
+@media screen and (min-width: 768px) {
+    .c-lead-copy__text span:not(:first-of-type) {
+        text-align-last: center;
+    }
+
+    .sp-only {
+        display: none;
+    }
+}
+
+/* メインコンテンツ */
+
+.c-section {
+    padding-block: clamp(50px, 32.394px + 4.695vw, 100px);
+}
+
+.c-section-title {
+    font-size: clamp(var(--fz-40px), 37.183px + 0.751vw, var(--fz-48px));
+    color: var(--color-yellow);
+    font-weight: bold;
+    text-align: center;
+}
 
 /* 店舗リスト */
 
+.c-section--shop-list {
+    padding-block-start: 0;
+}
+
+.l-shop-list-section {
+    background: var(--color-yellow);
+    box-shadow: clamp(5px, -0.282px + 1.408vw, 20px) clamp(5px, -0.282px + 1.408vw, 20px) var(--color-red);
+    color: var(--color-black);
+    padding-block: clamp(50px, 32.394px + 4.695vw, 100px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.c-section-title--black {
+    color: var(--color-black);
+}
+
+.l-scroll-list {
+    display: flex;
+    align-items: center;
+    padding-inline: clamp(10px, 6.479px + 0.939vw, 20px);
+}
+
+.c-scroll-btn {
+    width: 40px;
+    flex-shrink: 0;
+}
+
+.c-scroll-btn:last-of-type {
+    transform: rotate(180deg);
+}
+
+.c-shop-card__list {
+    display: flex;
+    gap: 20px;
+    padding-inline: clamp(0px, -7.042px + 1.878vw, 20px);
+}
+
+.c-shop-card__item {
+    background-color: var(--color-super-white);
+    flex-shrink: 1;
+}
+
+.c-shop-card__item:not(:first-of-type) {
+    display: none;
+}
+
+.c-shop-card__item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.c-shop-card__name {
+    padding-block: 10px;
+    padding-inline: 10px;
+}
+
+.c-btn--shop-list {
+    background-color: var(--color-black);
+    color: var(--color-super-white);
+}
+
+@media screen and (min-width: 768px) {
+    .c-shop-card__item:not(:first-of-type) {
+        display: block;
+    }
+}
+
 /* 開催概要 */
 
+.c-section--event-info {
+    background: url(../img/bg_event_info.png) no-repeat center / cover;
+}
+
+.l-event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.c-event-info__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--color-black);
+    padding-block: clamp(10px, 6.479px + 0.939vw, 20px);
+    padding-inline: clamp(10px, -21.690px + 8.451vw, 100px);
+}
+
+.c-event-info__item {
+    display: flex;
+}
+
+.c-event-info__item::before {
+    content: url(../img/icon_gyoza.png);
+    padding-inline-end: 5px;
+}
+
+.c-event-info__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-event-info__text dt {
+    font-weight: normal;
+}
+
+.c-event-info__text dd span {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .c-event-info__text {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .c-event-info__text dt{
+        width: 80px;
+    }
+}
+
 /* アクセス */
+
+.c-section--access{
+    background: var(--color-super-white);
+}
+
+.c-google-map iframe{
+    width: 100%;
+    height: 300px;
+}
+
+.l-access{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 
 /* お知らせ */
 #news h2 {
@@ -753,10 +939,6 @@ time {
 
 /* プライバシーポリシー
 ----------------------------------------- */
-section {
-    max-width: 960px;
-    margin: 0 auto;
-}
 
 .l-privacy-header {
     font-size: clamp(2.5rem, 2.324rem + 0.751vw, 3rem);
