@@ -128,7 +128,7 @@ body {
     }
 
     .c-header-nav__item::before {
-        content: url(../img/icon_gyoza.png);
+        content: url(../img/icon_gyoza.svg);
     }
 
     .c-header-nav__hamburger {
@@ -455,7 +455,7 @@ body {
 }
 
 .c-event-info__item::before {
-    content: url(../img/icon_gyoza.png);
+    content: url(../img/icon_gyoza_red.svg);
     padding-inline-end: 5px;
 }
 
