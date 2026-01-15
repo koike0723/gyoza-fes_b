@@ -570,6 +570,7 @@ a:hover {
 .c-news__item {
     border-bottom: 2px solid var(--color-red);
 }
+
 .c-news__item a:hover {
     text-decoration: none;
 }
@@ -596,28 +597,36 @@ a:hover {
     box-shadow:
         clamp(5px, -0.282px + 1.408vw, 20px) clamp(5px, -0.282px + 1.408vw, 20px) 0 0 var(--color-red);
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 25px;
+    padding-block: 10px;
+    padding-inline: 10px;
     margin-block-end: 80px;
 }
 
 .c-shop-card img {
-    width: 345px;
+    width: 80%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     flex-shrink: 0;
+    margin-inline: auto;
 }
 
 .c-shop-card_detail {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px 10px 10px 0;
     width: 100%;
+    text-align: center;
     font-size: clamp(20px, 18.592px + 0.376vw, 24px);
+    gap: 25px;
 }
 
 .c-shop-card_detailtext {
     color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .c-shop-card__shopname {
@@ -627,10 +636,6 @@ a:hover {
     text-underline-offset: 0.3em;
 }
 
-.c-shop-card_detailgyoza {
-    margin-block-start: 28px;
-}
-
 .c-shop-card a {
     font-weight: bold;
     text-align: center;
@@ -638,43 +643,27 @@ a:hover {
     color: var(--color-black);
     width: 100%;
     display: block;
-    padding: 10px;
+    padding: 17px;
 }
 
-.sp_br {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 
     .c-shop-card {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 10px;
+        flex-direction: row;
+        gap: 30px;
+        margin-block-end: 80px;
     }
 
     .c-shop-card img {
-        width: 80%;
-        margin: 0 auto;
+        width: 345px;
     }
 
     .c-shop-card_detail {
-        text-align: center;
-        margin: 0;
-    }
-
-    .c-shop-card_detailgyoza {
-        margin-block-start: 25px;
+        text-align: left;
     }
 
     .c-shop-card a {
-        margin-block-start: 20px;
-        padding: 17px;
-    }
-
-    .sp_br {
-        display: block;
+        padding: 10px;
     }
 }
 
@@ -811,8 +800,8 @@ a:hover {
 }
 
 .c-sub-page-heading--news {
-     font-size: var(--fz-24px);
-     padding-block: 0;
+    font-size: var(--fz-24px);
+    padding-block: 0;
 }
 
 .c-news__titledetail {
@@ -990,7 +979,7 @@ a:hover {
     gap: 24px;
 }
 
-.l-contact-form+*{
+.l-contact-form+* {
     margin-block-start: 53px;
 }
 
@@ -1090,7 +1079,7 @@ a:hover {
     gap: 16px;
 }
 
-.c-contact-agree__text>a{
+.c-contact-agree__text>a {
     font-weight: bold;
 }
 
