@@ -530,6 +530,7 @@ body {
 /* お知らせ */
 
 .l-news {
+    padding-block: 35px;
     background: var(--color-super-white);
 }
 
@@ -542,7 +543,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 35px 0;
 }
 
 .scroll::-webkit-scrollbar {
