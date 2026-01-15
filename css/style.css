@@ -601,7 +601,7 @@ body {
     justify-content: space-between;
     margin: 10px 10px 10px 0;
     width: 100%;
-    font-size: var(--fz-24px);
+    font-size: clamp(20px, 18.592px + 0.376vw, 24px);
 }
 
 .c-shop-card_detailtext {
@@ -651,7 +651,6 @@ body {
 
     .c-shop-card_detail {
         text-align: center;
-        font-size: var(--fz-20px);
         margin: 0;
     }
 
