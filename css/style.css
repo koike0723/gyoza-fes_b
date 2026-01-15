@@ -65,6 +65,10 @@ body {
     padding-block: 16px;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /* ヘッダー
 ----------------------------------------- */
 
@@ -557,10 +561,11 @@ body {
     margin-inline-end: 35px;
     color: var(--color-black);
     font-size: var(--fz-16px);
+    border-bottom: 2px solid var(--color-red);
 }
 
-.c-news__item {
-    border-bottom: 2px solid var(--color-red);
+.c-news__item a:hover {
+    text-decoration: none;
 }
 
 /* -------pc版-------- */
