@@ -993,6 +993,7 @@ body {
 .c-contact-type {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 /* アイコンを追加 */
