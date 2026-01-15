@@ -64,7 +64,7 @@ body {
     justify-content: center;
 }
 
-.c-btn {
+.c-btn{
     display: inline-block;
     background-color: var(--color-yellow);
     color: var(--color-black);
@@ -73,6 +73,7 @@ body {
     padding-inline: 48px;
     padding-block: 16px;
 }
+
 
 a:hover {
     text-decoration: underline;
@@ -510,10 +511,6 @@ a:hover {
     margin-inline-end: 35px;
     color: var(--color-black);
     font-size: var(--fz-16px);
-    border-bottom: 2px solid var(--color-red);
-}
-
-.c-news__item {
     border-bottom: 2px solid var(--color-red);
 }
 
