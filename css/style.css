@@ -819,12 +819,9 @@ body {
     font-weight: bold;
 }
 
-.c-news__title {
-    font-size: var(--fz-24px);
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 0.1em;
-    margin: 0 auto;
+.l-page-header--news {
+     font-size: var(--fz-24px);
+     padding-block: 0;
 }
 
 .c-news__titledetail {
