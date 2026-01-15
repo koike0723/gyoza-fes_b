@@ -972,6 +972,13 @@ body {
     font-weight: normal;
     padding-block-start: 10px;
 }
+.c-privacy-cover{
+    counter-reset: number 0;
+}
+.c-privacy-cover li::before{
+    counter-increment: number 1;
+    content: counter(number) "）";
+}
 
 @media screen and (max-width: 768px) {
     .l-privacy-header {
