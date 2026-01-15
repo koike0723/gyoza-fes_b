@@ -26,8 +26,12 @@
         <div id="top" class="c-top">
             <div class="l-wrapper c-top__contents">
                 <h1 class="c-logo">
-                    <img class="c-logo--pc" src="./img/logo_02.svg" alt="ふくおか餃子FES">
-                    <img class="c-logo--sp" src="./img/logo_line_02.svg" alt="ふくおか餃子FES">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="./img/logo_02.svg" media="(min-width: 768px)">
+                            <img src="./img/logo_line_02.svg" alt="ふくおか餃子FES">
+                        </picture>
+                    </a>
                 </h1>
                 <nav class="c-header-nav">
                     <ul class="c-header-nav__list">
@@ -60,7 +64,7 @@
 
     <main class="l-main">
         <div class="l-wrapper">
-            <div class="l-wrapper-inner">                
+            <div class="l-wrapper-inner">
                 <section class="l-contact-heading">
                     <h1 class="c-section-title">お問い合わせ</h1>
                     <p>
@@ -75,6 +79,7 @@
                             </dt>
                             <dd class="c-contact-type__content c-contact-type__content--select">
                                 <select name="inquiry-type" id="inquiry-type" required>
+                                    <option value="選択してください" hidden>選択してください</option>
                                     <option value="FESに関すること">FESに関すること</option>
                                     <option value="店舗に関すること">店舗に関すること</option>
                                     <option value="会場に関すること">会場に関すること</option>
@@ -139,22 +144,23 @@
                             </dd>
                         </div>
                     </dl>
-                </form>
-                <div class="l-contact-agree">
-                    <div class="c-contact-agree">
-                        <p class="c-contact-agree__text">
-                            当イベントの
-                            <a href="./privacy.html">プライバシーポリシー</a>
-                            に同意頂ける場合は「同意する」にチェックを付け「入力内容の確認」ボタンをクリックしてください
-                        </p>
-                        <p class="c-contact-agree__item">
-                            <input type="checkbox" id="agree" name="agree" value="同意する"><label for="agree">同意する</label>
+                    <div class="l-contact-agree">
+                        <div class="c-contact-agree">
+                            <p class="c-contact-agree__text">
+                                当イベントの
+                                <a href="./privacy.html">プライバシーポリシー</a>
+                                に同意頂ける場合は「同意する」にチェックを付け「入力内容の確認」ボタンをクリックしてください
+                            </p>
+                            <p class="c-contact-agree__item">
+                                <input type="checkbox" id="agree" name="agree" value="同意する"><label
+                                    for="agree">同意する</label>
+                            </p>
+                        </div>
+                        <p class="c-btn">
+                            <input type="submit" value="送信する">
                         </p>
                     </div>
-                    <p class="c-btn">
-                        <input type="submit" value="送信する">
-                    </p>
-                </div>
+                </form>
             </div>
         </div>
     </main>
@@ -169,7 +175,7 @@
             <div class="l-wrapper l-footer-contets">
                 <div class="c-organization">
                     <div class="c-logo c-logo--footer">
-                        <img src="./img/logo_02.svg" alt="ふくおか餃子FES">
+                        <a href="index.html"><img src="./img/logo_02.svg" alt="ふくおか餃子FES"></a>
                     </div>
                     <dl class="c-organization__list">
                         <div class="c-organization__item">

@@ -23,9 +23,12 @@
     --fz-12px: 12px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--color-gray);
-
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: var(--fz-16px);
     color: var(--color-white);
@@ -90,10 +93,6 @@ a:hover {
     width: 268px;
 }
 
-.c-logo--pc {
-    display: none;
-}
-
 .c-header-nav__list {
     display: none;
 }
@@ -120,14 +119,6 @@ a:hover {
 
     .c-logo {
         width: 210px;
-    }
-
-    .c-logo--sp {
-        display: none;
-    }
-
-    .c-logo--pc {
-        display: block;
     }
 
     .c-header-nav__list {
@@ -534,6 +525,7 @@ a:hover {
 /* お知らせ */
 
 .l-news {
+    padding-block: 35px;
     background: var(--color-super-white);
 }
 
@@ -546,7 +538,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 35px 0;
 }
 
 .scroll::-webkit-scrollbar {
@@ -615,7 +606,7 @@ a:hover {
     justify-content: space-between;
     margin: 10px 10px 10px 0;
     width: 100%;
-    font-size: var(--fz-24px);
+    font-size: clamp(20px, 18.592px + 0.376vw, 24px);
 }
 
 .c-shop-card_detailtext {
@@ -665,7 +656,6 @@ a:hover {
 
     .c-shop-card_detail {
         text-align: center;
-        font-size: var(--fz-20px);
         margin: 0;
     }
 
@@ -893,6 +883,9 @@ a:hover {
 }
 
 .l-faq-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-yellow);
     width: 200px;
     height: 50px;
@@ -908,9 +901,6 @@ a:hover {
     font-size: var(--fz-16px);
     font-weight: bold;
     color: var(--color-black);
-    text-align: center;
-    padding-block-start: 1em;
-    margin: 0 auto;
 }
 
 .c-faq-content {
@@ -978,6 +968,13 @@ a:hover {
     font-weight: normal;
     padding-block-start: 10px;
 }
+.c-privacy-cover{
+    counter-reset: number 0;
+}
+.c-privacy-cover li::before{
+    counter-increment: number 1;
+    content: counter(number) "）";
+}
 
 @media screen and (max-width: 768px) {
     .l-privacy-header {
@@ -1021,6 +1018,7 @@ a:hover {
 .c-contact-type {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 /* アイコンを追加 */
@@ -1061,11 +1059,16 @@ a:hover {
 .c-contact-type__content>* {
     background-color: var(--color-white);
     width: 100%;
+    padding-inline-start: 10px;
 }
 
 /* お問い合わせ種別 */
+
 .c-contact-type__content--select>* {
     width: 267px;
+    -moz-appearance: menulist-button;
+    -webkit-appearance: menulist-button;
+    appearance: menulist-button;
 }
 
 /* お問い合わせ内容入力欄 */

@@ -26,8 +26,12 @@
         <div id="top" class="c-top">
             <div class="l-wrapper c-top__contents">
                 <h1 class="c-logo">
-                    <img class="c-logo--pc" src="./img/logo_02.svg" alt="ふくおか餃子FES">
-                    <img class="c-logo--sp" src="./img/logo_line_02.svg" alt="ふくおか餃子FES">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="./img/logo_02.svg" media="(min-width: 768px)">
+                            <img src="./img/logo_line_02.svg" alt="ふくおか餃子FES">
+                        </picture>
+                    </a>
                 </h1>
                 <nav class="c-header-nav">
                     <ul class="c-header-nav__list">
@@ -59,12 +63,12 @@
     </header>
     <main class="l-main">
         <article class="l-wrapper">
-            <div class="l-news-time">
-                <time class="c-news-date" datetime="2030-12-17">
-                    2030.12.17 (土)
-                </time>
-            </div>
             <div class="l-wrapper-inner">
+                <div class="l-news-time">
+                    <time class="c-news-date" datetime="2030-12-17">
+                        2030.12.17 (土)
+                    </time>
+                </div>
                 <h1 class="c-news__title">ふくおか餃子FES開催決定!</h1>
                 <p class="c-news__text">テキストテキストテキストテキストテキストテキストテキスト</p>
 
@@ -83,33 +87,31 @@
                 <div class="l-btn-area l-news-cat">
                     <a class="c-btn" href="index.html#news">一覧に戻る</a>
                 </div>
+                <div class="social">
+                    <p class="social-text">シェアする</p>
 
-                <!-- トップページのお知らせに戻る -->
-            </div>
-            <div class="social">
-                <p class="social-text">シェアする</p>
+                    <ul class="social-list">
 
-                <ul class="social-list">
+                        <li class="social-list-X">
+                            <a target="_blank" href="#">
+                                <img src="./img/X_white.png" alt="">
+                            </a>
+                        </li>
 
-                    <li class="social-list-X">
-                        <a target="_blank" href="#">
-                            <img src="./img/X_white.png" alt="">
-                        </a>
-                    </li>
+                        <li class="social-list-Instagram">
+                            <a target="_blank" href="#">
+                                <img src="./img/instagram_white.png" alt="">
+                            </a>
+                        </li>
 
-                    <li class="social-list-Instagram">
-                        <a target="_blank" href="#">
-                            <img src="./img/instagram_white.png" alt="">
-                        </a>
-                    </li>
+                        <li class="social-list-LINE">
+                            <a target="_blank" href="#">
+                                <img src="./img/line_white.png" alt="">
+                            </a>
+                        </li>
 
-                    <li class="social-list-LINE">
-                        <a target="_blank" href="#">
-                            <img src="./img/line_white.png" alt="">
-                        </a>
-                    </li>
-
-                </ul>
+                    </ul>
+                </div>
             </div>
         </article>
     </main>
@@ -123,7 +125,7 @@
             <div class="l-wrapper l-footer-contets">
                 <div class="c-organization">
                     <div class="c-logo c-logo--footer">
-                        <img src="./img/logo_02.svg" alt="ふくおか餃子FES">
+                        <a href="index.html"><img src="./img/logo_02.svg" alt="ふくおか餃子FES"></a>
                     </div>
                     <dl class="c-organization__list">
                         <div class="c-organization__item">
