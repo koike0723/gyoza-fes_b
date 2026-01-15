@@ -48,6 +48,15 @@ body {
     padding-block: clamp(50px, 32.394px + 4.695vw, 100px);
 }
 
+.c-sub-page-heading {
+    font-size: clamp(40px, 37.183px + 0.751vw, 48px);
+    margin: 0 auto;
+    font-weight: bold;
+    color: var(--color-white);
+    text-align: center;
+    padding-block-end: 50px;
+}
+
 /* -------ボタン------- */
 
 .l-btn-area {
@@ -564,6 +573,9 @@ a:hover {
     border-bottom: 2px solid var(--color-red);
 }
 
+.c-news__item {
+    border-bottom: 2px solid var(--color-red);
+}
 .c-news__item a:hover {
     text-decoration: none;
 }
@@ -806,12 +818,9 @@ a:hover {
     font-weight: bold;
 }
 
-.c-news__title {
-    font-size: var(--fz-24px);
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 0.1em;
-    margin: 0 auto;
+.c-sub-page-heading--news {
+     font-size: var(--fz-24px);
+     padding-block: 0;
 }
 
 .c-news__titledetail {
@@ -974,12 +983,6 @@ a:hover {
 .c-privacy-cover li::before{
     counter-increment: number 1;
     content: counter(number) "）";
-}
-
-@media screen and (max-width: 768px) {
-    .l-privacy-header {
-        width: 70%;
-    }
 }
 
 
