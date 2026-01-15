@@ -45,6 +45,15 @@ body {
     padding-block: clamp(50px, 32.394px + 4.695vw, 100px);
 }
 
+.l-page-header {
+    font-size: clamp(40px, 37.183px + 0.751vw, 48px);
+    margin: 0 auto;
+    font-weight: bold;
+    color: var(--color-white);
+    text-align: center;
+    padding-block-end: 50px;
+}
+
 /* -------ボタン------- */
 
 .l-btn-area {
@@ -568,7 +577,7 @@ body {
     font-size: var(--fz-16px);
 }
 
-.c-news__item{
+.c-news__item {
     border-bottom: 2px solid var(--color-red);
 }
 
@@ -974,7 +983,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .l-privacy-header {
+    .l-page-header {
         width: 70%;
     }
 }
