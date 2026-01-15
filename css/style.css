@@ -89,10 +89,6 @@ body {
     width: 268px;
 }
 
-.c-logo--pc {
-    display: none;
-}
-
 .c-header-nav__list {
     display: none;
 }
@@ -119,14 +115,6 @@ body {
 
     .c-logo {
         width: 210px;
-    }
-
-    .c-logo--sp {
-        display: none;
-    }
-
-    .c-logo--pc {
-        display: block;
     }
 
     .c-header-nav__list {
@@ -571,7 +559,7 @@ body {
     font-size: var(--fz-16px);
 }
 
-.c-news__item{
+.c-news__item {
     border-bottom: 2px solid var(--color-red);
 }
 
