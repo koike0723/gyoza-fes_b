@@ -132,22 +132,6 @@ a:hover {
     padding-inline-end: 5px;
 }
 
-@media screen and (min-width: 768px) {
-
-    .c-logo {
-        width: 210px;
-    }
-
-    .c-header-nav__list {
-        display: flex;
-        gap: 20px;
-    }
-
-    .c-header-nav__hamburger {
-        display: none;
-    }
-}
-
 /* フッター
 ----------------------------------------- */
 
@@ -250,13 +234,6 @@ a:hover {
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-    .l-footer-contets {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
 /* トップページ
 ----------------------------------------- */
 
@@ -348,16 +325,6 @@ a:hover {
     color: var(--color-yellow);
 }
 
-@media screen and (min-width: 768px) {
-    .c-lead-copy__text span:not(:first-of-type) {
-        text-align-last: center;
-    }
-
-    .sp-only {
-        display: none;
-    }
-}
-
 /* メインコンテンツ */
 
 .c-section {
@@ -442,19 +409,6 @@ a:hover {
     color: var(--color-super-white);
 }
 
-@media screen and (min-width: 768px) {
-
-    .c-shop-card__item {
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: calc((100% - 40px) / 3);
-    }
-
-    .c-shop-card__item:not(:first-of-type) {
-        display: flex;
-    }
-}
-
 /* 開催概要 */
 
 .c-section--event-info {
@@ -474,7 +428,6 @@ a:hover {
     background: rgba(255, 255, 255, 0.6);
     color: var(--color-black);
     padding-block: clamp(10px, 6.479px + 0.939vw, 20px);
-    /* padding-inline: clamp(10px, -21.690px + 8.451vw, 100px); */
 }
 
 .c-event-info__item {
@@ -498,13 +451,6 @@ a:hover {
 
 .c-event-info__text dd span {
     font-weight: bold;
-}
-
-@media screen and (min-width: 768px) {
-    .c-event-info__text {
-        flex-direction: row;
-        gap: 10px;
-    }
 }
 
 /* アクセス */
@@ -575,19 +521,6 @@ a:hover {
     text-decoration: none;
 }
 
-/* -------pc版-------- */
-@media screen and (min-width: 768px) {
-
-    .scroll {
-        height: 210px;
-    }
-
-    .c-news__item a {
-        display: flex;
-        margin-left: 15px;
-        gap: 10px;
-    }
-}
 
 /* 店舗リスト
 ----------------------------------------- */
@@ -644,27 +577,6 @@ a:hover {
     width: 100%;
     display: block;
     padding: 17px;
-}
-
-@media screen and (min-width: 768px) {
-
-    .c-shop-card {
-        flex-direction: row;
-        gap: 30px;
-        margin-block-end: 80px;
-    }
-
-    .c-shop-card img {
-        width: 345px;
-    }
-
-    .c-shop-card_detail {
-        text-align: left;
-    }
-
-    .c-shop-card a {
-        padding: 10px;
-    }
 }
 
 /* 店舗詳細
@@ -772,26 +684,6 @@ a:hover {
     font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
-    .c-product-introduction {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .c-product-introduction__img {
-        flex: 1;
-        width: 100%;
-        max-width: 470px;
-    }
-
-    .c-product-introduction__description {
-        flex: 1;
-        min-width: 0;
-    }
-}
-
-
 /* お知らせ詳細
 ----------------------------------------- */
 .c-news-date {
@@ -843,12 +735,6 @@ a:hover {
 .social-list {
     display: flex;
     gap: 20px;
-}
-
-@media screen and (min-width: 768px) {
-    .c-sub-page-heading--news{
-        text-align: center;
-    }
 }
 
 /* よくある質問
@@ -1079,10 +965,121 @@ a:hover {
 
 /* ---------------------- */
 
-/* -------pc版----------- */
+
+/* PC版
+------------------------------------- */
 
 @media screen and (min-width: 768px) {
 
+    /* ヘッダー
+    ------------------------------------- */
+    .c-logo {
+        width: 210px;
+    }
+
+    .c-header-nav__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    .c-header-nav__hamburger {
+        display: none;
+    }
+
+    /* フッター
+    ----------------------------------------- */
+    .l-footer-contets {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* トップページ
+    ----------------------------------------- */
+
+    /* リードコピー */
+    .c-lead-copy__text span:not(:first-of-type) {
+        text-align-last: center;
+    }
+
+    .sp-only {
+        display: none;
+    }
+
+    /* 店舗リスト */
+    .c-shop-card__item {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc((100% - 40px) / 3);
+    }
+
+    .c-shop-card__item:not(:first-of-type) {
+        display: flex;
+    }
+
+    /* 開催概要 */
+    .c-event-info__text {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    /* お知らせ */
+    .scroll {
+        height: 210px;
+    }
+
+    .c-news__item a {
+        display: flex;
+        margin-left: 15px;
+        gap: 10px;
+    }
+
+    /* 店舗リスト
+    ----------------------------------------- */
+    .c-shop-card {
+        flex-direction: row;
+        gap: 30px;
+        margin-block-end: 80px;
+    }
+
+    .c-shop-card img {
+        width: 345px;
+    }
+
+    .c-shop-card_detail {
+        text-align: left;
+    }
+
+    .c-shop-card a {
+        padding: 10px;
+    }
+
+     /* 店舗詳細
+    ----------------------------------------- */
+    .c-product-introduction {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .c-product-introduction__img {
+        flex: 1;
+        width: 100%;
+        max-width: 470px;
+    }
+
+    .c-product-introduction__description {
+        flex: 1;
+        min-width: 0;
+    }
+
+    /* お知らせ詳細
+    ----------------------------------------- */
+    .c-sub-page-heading--news {
+        text-align: center;
+    }
+
+    /* お問い合せ
+    ------------------------------------------ */
     .c-contact-type {
         flex-direction: row;
         align-items: start;
