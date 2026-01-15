@@ -568,9 +568,6 @@ a:hover {
     border-bottom: 2px solid var(--color-red);
 }
 
-.c-news__item {
-    border-bottom: 2px solid var(--color-red);
-}
 .c-news__item a:hover {
     text-decoration: none;
 }
