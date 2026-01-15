@@ -1007,6 +1007,10 @@ a:hover {
     gap: 24px;
 }
 
+.l-contact-form+*{
+    margin-block-start: 53px;
+}
+
 .l-contact-agree {
     display: flex;
     flex-direction: column;
@@ -1017,6 +1021,8 @@ a:hover {
 /* -------------------------- */
 
 /* -----------システム関係---- */
+
+
 
 .c-contact-type {
     display: flex;
@@ -1098,6 +1104,10 @@ a:hover {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+}
+
+.c-contact-agree__text>a{
+    font-weight: bold;
 }
 
 /* ---------------------- */
