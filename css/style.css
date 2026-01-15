@@ -23,9 +23,12 @@
     --fz-12px: 12px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--color-gray);
-
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: var(--fz-16px);
     color: var(--color-white);
@@ -530,6 +533,7 @@ body {
 /* お知らせ */
 
 .l-news {
+    padding-block: 35px;
     background: var(--color-super-white);
 }
 
@@ -542,7 +546,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 35px 0;
 }
 
 .scroll::-webkit-scrollbar {
