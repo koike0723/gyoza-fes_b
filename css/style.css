@@ -639,7 +639,7 @@ body {
     color: var(--color-black);
     width: 100%;
     display: block;
-    padding: 20px 50px;
+    padding: 10px;
 }
 
 .sp_br {
@@ -674,6 +674,7 @@ body {
 
     .c-shop-card a {
         margin-block-start: 20px;
+        padding: 17px;
     }
 
     .sp_br {
