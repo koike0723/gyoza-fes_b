@@ -542,7 +542,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 35px 15px;
+    padding: 35px 0;
 }
 
 .scroll::-webkit-scrollbar {
@@ -563,7 +563,6 @@ body {
 
 .c-news__item {
     text-align: left;
-    margin-block: 35px;
     margin-inline-end: 35px;
     color: var(--color-black);
     font-size: var(--fz-16px);
