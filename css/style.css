@@ -865,6 +865,9 @@ body {
 }
 
 .l-faq-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-yellow);
     width: 200px;
     height: 50px;
@@ -880,9 +883,6 @@ body {
     font-size: var(--fz-16px);
     font-weight: bold;
     color: var(--color-black);
-    text-align: center;
-    padding-block-start: 1em;
-    margin: 0 auto;
 }
 
 .c-faq-content {
