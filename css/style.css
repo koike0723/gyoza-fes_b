@@ -23,9 +23,12 @@
     --fz-12px: 12px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--color-gray);
-
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: var(--fz-16px);
     color: var(--color-white);
@@ -71,6 +74,10 @@ body {
     padding-block: 16px;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /* ヘッダー
 ----------------------------------------- */
 
@@ -93,10 +100,6 @@ body {
 
 .c-logo {
     width: 268px;
-}
-
-.c-logo--pc {
-    display: none;
 }
 
 .c-header-nav__list {
@@ -125,14 +128,6 @@ body {
 
     .c-logo {
         width: 210px;
-    }
-
-    .c-logo--sp {
-        display: none;
-    }
-
-    .c-logo--pc {
-        display: block;
     }
 
     .c-header-nav__list {
@@ -539,6 +534,7 @@ body {
 /* お知らせ */
 
 .l-news {
+    padding-block: 35px;
     background: var(--color-super-white);
 }
 
@@ -551,7 +547,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 35px 0;
 }
 
 .scroll::-webkit-scrollbar {
@@ -575,10 +570,14 @@ body {
     margin-inline-end: 35px;
     color: var(--color-black);
     font-size: var(--fz-16px);
+    border-bottom: 2px solid var(--color-red);
 }
 
 .c-news__item {
     border-bottom: 2px solid var(--color-red);
+}
+.c-news__item a:hover {
+    text-decoration: none;
 }
 
 /* -------pc版-------- */
@@ -619,7 +618,7 @@ body {
     justify-content: space-between;
     margin: 10px 10px 10px 0;
     width: 100%;
-    font-size: var(--fz-24px);
+    font-size: clamp(20px, 18.592px + 0.376vw, 24px);
 }
 
 .c-shop-card_detailtext {
@@ -645,7 +644,7 @@ body {
     color: var(--color-black);
     width: 100%;
     display: block;
-    padding: 20px 50px;
+    padding: 10px;
 }
 
 .sp_br {
@@ -669,7 +668,6 @@ body {
 
     .c-shop-card_detail {
         text-align: center;
-        font-size: var(--fz-20px);
         margin: 0;
     }
 
@@ -680,6 +678,7 @@ body {
 
     .c-shop-card a {
         margin-block-start: 20px;
+        padding: 17px;
     }
 
     .sp_br {
@@ -893,6 +892,9 @@ body {
 }
 
 .l-faq-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-yellow);
     width: 200px;
     height: 50px;
@@ -908,9 +910,6 @@ body {
     font-size: var(--fz-16px);
     font-weight: bold;
     color: var(--color-black);
-    text-align: center;
-    padding-block-start: 1em;
-    margin: 0 auto;
 }
 
 .c-faq-content {
@@ -978,6 +977,13 @@ body {
     font-weight: normal;
     padding-block-start: 10px;
 }
+.c-privacy-cover{
+    counter-reset: number 0;
+}
+.c-privacy-cover li::before{
+    counter-increment: number 1;
+    content: counter(number) "）";
+}
 
 
 /* お問い合せ
@@ -1015,6 +1021,7 @@ body {
 .c-contact-type {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 /* アイコンを追加 */
@@ -1055,11 +1062,16 @@ body {
 .c-contact-type__content>* {
     background-color: var(--color-white);
     width: 100%;
+    padding-inline-start: 10px;
 }
 
 /* お問い合わせ種別 */
+
 .c-contact-type__content--select>* {
     width: 267px;
+    -moz-appearance: menulist-button;
+    -webkit-appearance: menulist-button;
+    appearance: menulist-button;
 }
 
 /* お問い合わせ内容入力欄 */
