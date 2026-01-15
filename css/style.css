@@ -106,8 +106,16 @@ a:hover {
     display: none;
 }
 
+.c-header-nav__item {
+    color: var(--color-black);
+}
+
 .c-header-nav__hamburger {
     padding-inline: 10px;
+}
+
+.c-header-nav__item::before {
+    content: url(../img/icon_gyoza.svg);
 }
 
 .c-breadcrumbs {
@@ -135,17 +143,8 @@ a:hover {
         gap: 20px;
     }
 
-    .c-header-nav__item {
-        color: var(--color-black);
-    }
-
-    .c-header-nav__item::before {
-        content: url(../img/icon_gyoza.svg);
-    }
-
     .c-header-nav__hamburger {
         display: none;
-
     }
 }
 
@@ -433,6 +432,9 @@ a:hover {
 .c-shop-card__name {
     padding-block: 10px;
     padding-inline: 10px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .c-btn--shop-list {
@@ -441,9 +443,6 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-    .c-shop-card__item:not(:first-of-type) {
-        display: block;
-    }
 
     .c-shop-card__item {
         flex-grow: 0;
@@ -451,10 +450,8 @@ a:hover {
         flex-basis: calc((100% - 40px) / 3);
     }
 
-    .c-shop-card__name {
-        flex-grow: 1;
+    .c-shop-card__item:not(:first-of-type) {
         display: flex;
-        align-items: center;
     }
 }
 
@@ -496,6 +493,7 @@ a:hover {
 
 .c-event-info__text dt {
     font-weight: normal;
+    width: 80px;
 }
 
 .c-event-info__text dd span {
@@ -506,10 +504,6 @@ a:hover {
     .c-event-info__text {
         flex-direction: row;
         gap: 10px;
-    }
-
-    .c-event-info__text dt {
-        width: 80px;
     }
 }
 
@@ -599,7 +593,8 @@ a:hover {
 
 .c-shop-card {
     background: var(--color-darkgray);
-    box-shadow: 20px 20px 0 0 var(--color-red);
+    box-shadow:
+        clamp(5px, -0.282px + 1.408vw, 20px) clamp(5px, -0.282px + 1.408vw, 20px) 0 0 var(--color-red);
     display: flex;
     gap: 30px;
     margin-block-end: 80px;
@@ -634,7 +629,6 @@ a:hover {
 
 .c-shop-card_detailgyoza {
     margin-block-start: 28px;
-    line-height: 2;
 }
 
 .c-shop-card a {
@@ -656,7 +650,6 @@ a:hover {
     .c-shop-card {
         display: flex;
         flex-direction: column;
-        box-shadow: 5px 5px 0 0 var(--color-red);
         gap: 20px;
         padding: 10px;
     }
@@ -673,7 +666,6 @@ a:hover {
 
     .c-shop-card_detailgyoza {
         margin-block-start: 25px;
-        line-height: 1.5;
     }
 
     .c-shop-card a {
@@ -872,13 +864,6 @@ a:hover {
 /* よくある質問
 ----------------------------------------- */
 
-.l-faq-header {
-    font-size: var(--fz-48px);
-    color: var(--color-white);
-    font-weight: bold;
-    text-align: center;
-}
-
 .l-faq-list {
     display: flex;
     justify-content: center;
@@ -933,10 +918,6 @@ a:hover {
 
 @media screen and (max-width: 768px) {
 
-    .l-faq-header {
-        font-size: var(--fz-40px);
-    }
-
     .l-faq-list li {
         flex-shrink: 0;
     }
@@ -977,10 +958,12 @@ a:hover {
     font-weight: normal;
     padding-block-start: 10px;
 }
-.c-privacy-cover{
+
+.c-privacy-cover {
     counter-reset: number 0;
 }
-.c-privacy-cover li::before{
+
+.c-privacy-cover li::before {
     counter-increment: number 1;
     content: counter(number) "）";
 }
@@ -1032,6 +1015,7 @@ a:hover {
     align-items: center;
     gap: 8px;
     flex-shrink: 0;
+    width: 240px;
 }
 
 .c-contact-type__title::before {
@@ -1111,10 +1095,6 @@ a:hover {
         align-items: start;
     }
 
-    .c-contact-type__title {
-        width: 240px;
-    }
-
     .c-contact-type__title+* {
         margin-inline-start: 8px;
     }
@@ -1122,6 +1102,4 @@ a:hover {
     .c-contact-type__content {
         flex-grow: 1;
     }
-
-
 }
