@@ -45,7 +45,7 @@ body {
     padding-block: clamp(50px, 32.394px + 4.695vw, 100px);
 }
 
-.l-page-header {
+.c-sub-page-heading {
     font-size: clamp(40px, 37.183px + 0.751vw, 48px);
     margin: 0 auto;
     font-weight: bold;
@@ -819,7 +819,7 @@ body {
     font-weight: bold;
 }
 
-.l-page-header--news {
+.c-sub-page-heading--news {
      font-size: var(--fz-24px);
      padding-block: 0;
 }
@@ -977,12 +977,6 @@ body {
 .c-privacy-desc {
     font-weight: normal;
     padding-block-start: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .l-page-header {
-        width: 70%;
-    }
 }
 
 
