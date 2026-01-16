@@ -528,7 +528,7 @@ a:hover {
         clamp(5px, -0.282px + 1.408vw, 20px) clamp(5px, -0.282px + 1.408vw, 20px) 0 0 var(--color-red);
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
     padding-block: 10px;
     padding-inline: 10px;
     margin-block-end: 80px;
@@ -549,11 +549,17 @@ a:hover {
     width: 100%;
     text-align: center;
     font-size: clamp(20px, 18.592px + 0.376vw, 24px);
-    gap: 25px;
+    gap: 30px;
 }
 
 .c-shop-card_detailtext {
     color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.c-shop-card_detailgyoza {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1044,6 +1050,10 @@ a:hover {
 
     .c-shop-card_detail {
         text-align: left;
+    }
+
+    .c-shop-card_detailtext {
+        gap: 40px;
     }
 
     .c-shop-card a {
